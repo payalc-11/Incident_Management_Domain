@@ -1,5 +1,5 @@
 # Incident Management Policy
-Current Date: September 02, 2025
+Current Date: September 26, 2025
 
 ## Introduction
 This document defines the operational guide for an incident management automation agent.  
@@ -13,18 +13,21 @@ Each procedure defines clear steps, role-based permissions, and validation requi
 ## Incident Operations
 
 ### Creating Incidents
-When to use: When service impacts are detected requiring formal incident management response.  
-Who can perform: Incident managers, technical support, and system administrators, 3rd party vendors (vendor_contact), executive  
+Use when service impacts are detected requiring formal incident management response.  
+Who Can Perform: Incident managers, technical support, system administrators, vendor contacts, executive  
 Pre-checks:
 - Check that reporter user exists and has active status
 - Verify client exists
 - Check that component exists if specified
 
 Steps:
-- Collect incident title, category, severity, and impact level
-- Set detection timestamp
+- Request incident title, description, category, severity, and impact level
+- Check for existing open incidents with similar characteristics
+- Apply severity classification process
+- Set detection timestamp and initial status as open
 - Associate with specified client and infrastructure component records
-- Create incident record and return incident identifier
+- Create incident record with determined severity level and return incident identifier
+
 
 #### Severity Classification Process during Incident Creation:  
 Evaluate the following conditions and set the corresponding boolean flags (`p1_*`, `p2_*`, `p3_*`) to **True** for every condition that applies based on the available data. Compute severity as **P1** if any P1 condition is `True`; otherwise **P2** if any P2 condition is `True`; otherwise **P3** if any P3 condition is `True`; otherwise **P4**.
@@ -51,22 +54,24 @@ If none of the P1/P2/P3 conditions apply, set severity as **P4**.
 - Create incident record with determined severity level and return incident identifier
 
 ### Updating Incident Status
-When to use: When incident conditions change requiring status modifications or progress updates.  
-Who can perform: Incident managers, technical support, executive  
+Use when incident conditions change requiring status modifications or progress updates.  
+Who Can Perform: Incident managers, technical support, executive  
 Pre-checks:
 - Verify incident exists and is accessible to user
 - Check user's role allows incident modifications
+- Confirm new status exists in allowed status enumeration
 
 Steps:
 - Retrieve current incident record
-- Collect specific status changes or field updates needed
-- Check that new status value matches allowed enum values (if there is any)
-- Create incident update record(s) documenting the change(s) along with logging the user who conducted the change
-- Apply changes to incident with the user identifier
+- Request specific status changes or field updates needed
+- Check that new status value matches allowed enum values
+- Apply changes to incident with current timestamp and user identifier
+- Create incident update record documenting the change
 - Return updated incident information
 
 #### subscription tier values and metrics
 **Premium Tier**
+
 Target clients: Enterprise customers with mission-critical operations
 Response times by severity:
 - P1 (Critical): 15-30 minutes initial response
@@ -83,6 +88,7 @@ Availability guarantee: 99.9% uptime
 Support coverage: 24/7/365
 
 **Standard Tier**
+
 Target clients: Mid-market businesses with important but less critical operations
 Response times by severity:
 - P1: 1-2 hours initial response
@@ -154,51 +160,54 @@ Steps:
 ## User Management Operations
 
 ### Creating User Accounts
-When to use: When adding personnel to the incident management system.  
-Who can perform: System administrators and incident managers  
-Pre-checks: 
+Use when adding personnel to the incident management system.  
+Who Can Perform: System administrators and incident managers  
+Pre-checks:
 - Check that email address is unique
-- Verify all required fields are provided by user
+- Verify all required fields are provided
 - Confirm client or vendor exists if association is specified
 
 Steps:
 - Acquire complete user information including name, email, role, and department
-- Check for existing records with same email address, users should have unique email
+- Check for existing records with same email address
 - Associate user with specified client or vendor if provided
-- Set status as active 
-- Create user record and return user identifier
+- Set status as active and record timezone information
+- Create user record with current timestamp and return user identifier
+
 
 ### Managing User Permissions
-When to use: When modifying user access levels or role assignments.  
-Who can perform: System administrators and incident managers  
+Use when modifying user access levels or role assignments.  
+Who Can Perform: System administrators and incident managers  
 Pre-checks:
 - Verify user record exists
-- Check requesting user has authority based on role (system administrators, incident managers only)
+- Check requesting user has authority based on role (system administrators, incident managers - only)
 - Confirm new role value exists in allowed enumeration
 
 Steps:
 - Retrieve current user record
-- Collect specific role or status changes needed
-- Check that new role assignment is valid 
+- Request specific role or status changes needed
+- Check that new role assignment is valid
 - Apply updates with modifier identification
 - Return updated user record and confirm changes saved
+
 
 ## Vendor Management Operations
 
 ### Registering Vendor Information
-When to use: When adding external service providers to the incident management ecosystem.  
-Who can perform: System administrators, incident managers, and executives.  
+Use when adding external service providers to the incident management ecosystem.  
+Who Can Perform: System administrators, incident managers, and executives  
 Pre-checks:
-- Check that vendor name, contact phone and emails are unique
+- Check that vendor name, contact email and contact phone is unique
 - Verify all required fields are provided
 - Confirm vendor type exists in allowed enumeration values
 
 Steps:
 - Acquire vendor details including name, type, and contact information
 - Check for existing records with same vendor name
-- Set status as active unless user specifies otherwise
-- Create vendor record
+- Set status as active unless specified otherwise
+- Create vendor record with current timestamp
 - Return vendor identifier and confirm successful creation
+
 
 ## Authority and Access Controls
 

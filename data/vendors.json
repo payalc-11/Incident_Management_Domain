@@ -1,0 +1,152 @@
+{
+  "1": {
+    "vendor_id": "1",
+    "vendor_name": "TechCorp Solutions",
+    "vendor_type": "consulting_services",
+    "contact_email": "contact@techcorpsolutions.com",
+    "contact_phone": "+14123838182",
+    "contact_person": "Melissa Frost",
+    "status": "active",
+    "created_at": "2023-10-17T05:05:41"
+  },
+  "2": {
+    "vendor_id": "2",
+    "vendor_name": "CloudFirst Systems",
+    "vendor_type": "security_provider",
+    "contact_email": "contact@cloudfirstsystems.com",
+    "contact_phone": "+12126622231",
+    "contact_person": "Riley Benton",
+    "status": "active",
+    "created_at": "2024-09-15T17:55:41"
+  },
+  "3": {
+    "vendor_id": "3",
+    "vendor_name": "SecureNet Technologies",
+    "vendor_type": "technology_provider",
+    "contact_email": "contact@securenettechnologies.com",
+    "contact_phone": "+14084191927",
+    "contact_person": "Richard Hobbs",
+    "status": "suspended",
+    "created_at": "2025-08-03T22:12:03"
+  },
+  "4": {
+    "vendor_id": "4",
+    "vendor_name": "DataFlow Consulting",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@dataflowconsulting.com",
+    "contact_phone": "+16057651494",
+    "contact_person": "Carolyn Ibarra",
+    "status": "active",
+    "created_at": "2024-12-12T11:22:01"
+  },
+  "5": {
+    "vendor_id": "5",
+    "vendor_name": "InfraTech Services",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@infratechservices.com",
+    "contact_phone": "+15083143865",
+    "contact_person": "Melanie Davidson",
+    "status": "active",
+    "created_at": "2024-03-02T19:56:07"
+  },
+  "6": {
+    "vendor_id": "6",
+    "vendor_name": "CyberGuard Security",
+    "vendor_type": "maintenance_services",
+    "contact_email": "contact@cyberguardsecurity.com",
+    "contact_phone": "+15056612323",
+    "contact_person": "Donna Nash",
+    "status": "active",
+    "created_at": "2024-08-12T08:46:30"
+  },
+  "7": {
+    "vendor_id": "7",
+    "vendor_name": "CloudScale Solutions",
+    "vendor_type": "technology_provider",
+    "contact_email": "contact@cloudscalesolutions.com",
+    "contact_phone": "+13102004748",
+    "contact_person": "Monique Young",
+    "status": "active",
+    "created_at": "2024-01-01T13:41:53"
+  },
+  "8": {
+    "vendor_id": "8",
+    "vendor_name": "NetworkPro Systems",
+    "vendor_type": "technology_provider",
+    "contact_email": "contact@networkprosystems.com",
+    "contact_phone": "+12158655161",
+    "contact_person": "Teresa Ruiz",
+    "status": "active",
+    "created_at": "2025-07-21T23:38:34"
+  },
+  "9": {
+    "vendor_id": "9",
+    "vendor_name": "DevOps Masters",
+    "vendor_type": "maintenance_services",
+    "contact_email": "contact@devopsmasters.com",
+    "contact_phone": "+14173223064",
+    "contact_person": "Christina Walker",
+    "status": "active",
+    "created_at": "2023-12-24T19:05:51"
+  },
+  "10": {
+    "vendor_id": "10",
+    "vendor_name": "ServerTech Inc",
+    "vendor_type": "cloud_provider",
+    "contact_email": "contact@servertechinc.com",
+    "contact_phone": "+16055603954",
+    "contact_person": "James Faulkner",
+    "status": "active",
+    "created_at": "2024-02-26T18:36:48"
+  },
+  "11": {
+    "vendor_id": "11",
+    "vendor_name": "MonitoringPlus",
+    "vendor_type": "security_provider",
+    "contact_email": "contact@monitoringplus.com",
+    "contact_phone": "+16163467201",
+    "contact_person": "Mary Livingston",
+    "status": "suspended",
+    "created_at": "2023-11-19T08:50:59"
+  },
+  "12": {
+    "vendor_id": "12",
+    "vendor_name": "BackupSecure Ltd",
+    "vendor_type": "infrastructure_provider",
+    "contact_email": "contact@backupsecureltd.com",
+    "contact_phone": "+14086017781",
+    "contact_person": "Thomas Johnson",
+    "status": "active",
+    "created_at": "2024-05-06T16:46:40"
+  },
+  "13": {
+    "vendor_id": "13",
+    "vendor_name": "DatabasePro Services",
+    "vendor_type": "maintenance_services",
+    "contact_email": "contact@databaseproservices.com",
+    "contact_phone": "+14053429071",
+    "contact_person": "Ricky Graves",
+    "status": "active",
+    "created_at": "2024-11-14T17:40:16"
+  },
+  "14": {
+    "vendor_id": "14",
+    "vendor_name": "LoadBalance Systems",
+    "vendor_type": "consulting_services",
+    "contact_email": "contact@loadbalancesystems.com",
+    "contact_phone": "+16078056820",
+    "contact_person": "Krista Anderson",
+    "status": "active",
+    "created_at": "2025-05-30T19:54:46"
+  },
+  "15": {
+    "vendor_id": "15",
+    "vendor_name": "FirewallExpert Corp",
+    "vendor_type": "consulting_services",
+    "contact_email": "contact@firewallexpertcorp.com",
+    "contact_phone": "+12127641092",
+    "contact_person": "Laura Howard",
+    "status": "active",
+    "created_at": "2024-07-14T02:48:25"
+  }
+}

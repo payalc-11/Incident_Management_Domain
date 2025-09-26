@@ -1,0 +1,533 @@
+{
+  "1": {
+    "metric_id": "1",
+    "incident_id": "31",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 2390,
+    "target_minutes": 506,
+    "recorded_by_user_id": "24",
+    "recorded_at": "2025-09-04T23:10:44"
+  },
+  "2": {
+    "metric_id": "2",
+    "incident_id": "7",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 2391,
+    "target_minutes": 866,
+    "recorded_by_user_id": "27",
+    "recorded_at": "2025-08-30T01:33:29"
+  },
+  "3": {
+    "metric_id": "3",
+    "incident_id": "30",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 203,
+    "target_minutes": 49,
+    "recorded_by_user_id": "13",
+    "recorded_at": "2025-09-07T23:17:47"
+  },
+  "4": {
+    "metric_id": "4",
+    "incident_id": "14",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 108,
+    "target_minutes": 52,
+    "recorded_by_user_id": "25",
+    "recorded_at": "2025-09-05T01:01:51"
+  },
+  "5": {
+    "metric_id": "5",
+    "incident_id": "4",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 332,
+    "target_minutes": 91,
+    "recorded_by_user_id": "27",
+    "recorded_at": "2025-09-20T01:23:15"
+  },
+  "6": {
+    "metric_id": "6",
+    "incident_id": "15",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 18,
+    "target_minutes": 34,
+    "recorded_by_user_id": "14",
+    "recorded_at": "2025-09-09T22:46:50"
+  },
+  "7": {
+    "metric_id": "7",
+    "incident_id": "1",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 2532,
+    "target_minutes": 340,
+    "recorded_by_user_id": "19",
+    "recorded_at": "2025-09-24T12:44:58"
+  },
+  "8": {
+    "metric_id": "8",
+    "incident_id": "10",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 160,
+    "target_minutes": 10,
+    "recorded_by_user_id": "19",
+    "recorded_at": "2025-09-22T19:52:55"
+  },
+  "9": {
+    "metric_id": "9",
+    "incident_id": "5",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 377,
+    "target_minutes": 90,
+    "recorded_by_user_id": "18",
+    "recorded_at": "2025-09-22T07:18:55"
+  },
+  "10": {
+    "metric_id": "10",
+    "incident_id": "36",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 434,
+    "target_minutes": 56,
+    "recorded_by_user_id": "9",
+    "recorded_at": "2025-09-24T09:45:08"
+  },
+  "11": {
+    "metric_id": "11",
+    "incident_id": "38",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 32,
+    "target_minutes": 60,
+    "recorded_by_user_id": "4",
+    "recorded_at": "2025-09-17T13:31:12"
+  },
+  "12": {
+    "metric_id": "12",
+    "incident_id": "47",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 141,
+    "target_minutes": 38,
+    "recorded_by_user_id": "4",
+    "recorded_at": "2025-09-12T01:43:49"
+  },
+  "13": {
+    "metric_id": "13",
+    "incident_id": "18",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 468,
+    "target_minutes": 1418,
+    "recorded_by_user_id": "9",
+    "recorded_at": "2025-09-21T17:38:38"
+  },
+  "14": {
+    "metric_id": "14",
+    "incident_id": "30",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 42,
+    "target_minutes": 97,
+    "recorded_by_user_id": "9",
+    "recorded_at": "2025-08-31T08:20:11"
+  },
+  "15": {
+    "metric_id": "15",
+    "incident_id": "2",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 105,
+    "target_minutes": 109,
+    "recorded_by_user_id": "23",
+    "recorded_at": "2025-09-23T16:19:04"
+  },
+  "16": {
+    "metric_id": "16",
+    "incident_id": "4",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 316,
+    "target_minutes": 68,
+    "recorded_by_user_id": "8",
+    "recorded_at": "2025-09-20T08:29:53"
+  },
+  "17": {
+    "metric_id": "17",
+    "incident_id": "5",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 114,
+    "target_minutes": 823,
+    "recorded_by_user_id": "20",
+    "recorded_at": "2025-09-24T15:28:28"
+  },
+  "18": {
+    "metric_id": "18",
+    "incident_id": "25",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 94,
+    "target_minutes": 105,
+    "recorded_by_user_id": "21",
+    "recorded_at": "2025-09-20T20:46:50"
+  },
+  "19": {
+    "metric_id": "19",
+    "incident_id": "28",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 214,
+    "target_minutes": 49,
+    "recorded_by_user_id": "3",
+    "recorded_at": "2025-09-08T18:16:34"
+  },
+  "20": {
+    "metric_id": "20",
+    "incident_id": "37",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 16,
+    "target_minutes": 20,
+    "recorded_by_user_id": "14",
+    "recorded_at": "2025-09-13T16:34:48"
+  },
+  "21": {
+    "metric_id": "21",
+    "incident_id": "24",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 68,
+    "target_minutes": 8,
+    "recorded_by_user_id": "5",
+    "recorded_at": "2025-09-19T14:29:26"
+  },
+  "22": {
+    "metric_id": "22",
+    "incident_id": "39",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 158,
+    "target_minutes": 20,
+    "recorded_by_user_id": "6",
+    "recorded_at": "2025-09-07T23:41:53"
+  },
+  "23": {
+    "metric_id": "23",
+    "incident_id": "17",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 1294,
+    "target_minutes": 170,
+    "recorded_by_user_id": "20",
+    "recorded_at": "2025-09-08T15:00:53"
+  },
+  "24": {
+    "metric_id": "24",
+    "incident_id": "38",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 43,
+    "target_minutes": 23,
+    "recorded_by_user_id": "10",
+    "recorded_at": "2025-09-20T01:41:53"
+  },
+  "25": {
+    "metric_id": "25",
+    "incident_id": "24",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 353,
+    "target_minutes": 1093,
+    "recorded_by_user_id": "18",
+    "recorded_at": "2025-09-25T10:43:39"
+  },
+  "26": {
+    "metric_id": "26",
+    "incident_id": "8",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 178,
+    "target_minutes": 17,
+    "recorded_by_user_id": "1",
+    "recorded_at": "2025-09-16T14:19:52"
+  },
+  "27": {
+    "metric_id": "27",
+    "incident_id": "5",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 462,
+    "target_minutes": 57,
+    "recorded_by_user_id": "21",
+    "recorded_at": "2025-08-29T02:59:37"
+  },
+  "28": {
+    "metric_id": "28",
+    "incident_id": "10",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 166,
+    "target_minutes": 7,
+    "recorded_by_user_id": "18",
+    "recorded_at": "2025-09-21T01:33:51"
+  },
+  "29": {
+    "metric_id": "29",
+    "incident_id": "38",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 138,
+    "target_minutes": 106,
+    "recorded_by_user_id": "24",
+    "recorded_at": "2025-09-11T22:03:30"
+  },
+  "30": {
+    "metric_id": "30",
+    "incident_id": "32",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 114,
+    "target_minutes": 17,
+    "recorded_by_user_id": "8",
+    "recorded_at": "2025-09-11T20:17:38"
+  },
+  "31": {
+    "metric_id": "31",
+    "incident_id": "19",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 145,
+    "target_minutes": 5,
+    "recorded_by_user_id": "30",
+    "recorded_at": "2025-09-26T06:04:56"
+  },
+  "32": {
+    "metric_id": "32",
+    "incident_id": "19",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 65,
+    "target_minutes": 9,
+    "recorded_by_user_id": "3",
+    "recorded_at": "2025-09-19T21:21:47"
+  },
+  "33": {
+    "metric_id": "33",
+    "incident_id": "8",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 15,
+    "target_minutes": 31,
+    "recorded_by_user_id": "13",
+    "recorded_at": "2025-09-09T05:06:21"
+  },
+  "34": {
+    "metric_id": "34",
+    "incident_id": "15",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 99,
+    "target_minutes": 17,
+    "recorded_by_user_id": "26",
+    "recorded_at": "2025-09-04T00:29:07"
+  },
+  "35": {
+    "metric_id": "35",
+    "incident_id": "21",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 468,
+    "target_minutes": 102,
+    "recorded_by_user_id": "6",
+    "recorded_at": "2025-09-15T04:44:20"
+  },
+  "36": {
+    "metric_id": "36",
+    "incident_id": "7",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 47,
+    "target_minutes": 78,
+    "recorded_by_user_id": "26",
+    "recorded_at": "2025-09-11T23:12:04"
+  },
+  "37": {
+    "metric_id": "37",
+    "incident_id": "43",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 766,
+    "target_minutes": 914,
+    "recorded_by_user_id": "20",
+    "recorded_at": "2025-08-31T12:17:29"
+  },
+  "38": {
+    "metric_id": "38",
+    "incident_id": "18",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 102,
+    "target_minutes": 23,
+    "recorded_by_user_id": "14",
+    "recorded_at": "2025-09-19T06:18:50"
+  },
+  "39": {
+    "metric_id": "39",
+    "incident_id": "8",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 105,
+    "target_minutes": 110,
+    "recorded_by_user_id": "17",
+    "recorded_at": "2025-09-20T05:05:31"
+  },
+  "40": {
+    "metric_id": "40",
+    "incident_id": "26",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 2691,
+    "target_minutes": 477,
+    "recorded_by_user_id": "16",
+    "recorded_at": "2025-09-23T18:01:09"
+  },
+  "41": {
+    "metric_id": "41",
+    "incident_id": "48",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 99,
+    "target_minutes": 74,
+    "recorded_by_user_id": "8",
+    "recorded_at": "2025-09-08T09:26:22"
+  },
+  "42": {
+    "metric_id": "42",
+    "incident_id": "6",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 61,
+    "target_minutes": 13,
+    "recorded_by_user_id": "26",
+    "recorded_at": "2025-09-03T15:59:05"
+  },
+  "43": {
+    "metric_id": "43",
+    "incident_id": "39",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 77,
+    "target_minutes": 15,
+    "recorded_by_user_id": "21",
+    "recorded_at": "2025-09-17T04:13:40"
+  },
+  "44": {
+    "metric_id": "44",
+    "incident_id": "44",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 138,
+    "target_minutes": 8,
+    "recorded_by_user_id": "25",
+    "recorded_at": "2025-09-08T18:11:13"
+  },
+  "45": {
+    "metric_id": "45",
+    "incident_id": "32",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 2808,
+    "target_minutes": 842,
+    "recorded_by_user_id": "11",
+    "recorded_at": "2025-09-26T02:25:51"
+  },
+  "46": {
+    "metric_id": "46",
+    "incident_id": "37",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 363,
+    "target_minutes": 118,
+    "recorded_by_user_id": "14",
+    "recorded_at": "2025-09-05T02:14:03"
+  },
+  "47": {
+    "metric_id": "47",
+    "incident_id": "36",
+    "metric_type": "resolution_time",
+    "calculated_value_minutes": 37,
+    "target_minutes": 1027,
+    "recorded_by_user_id": "24",
+    "recorded_at": "2025-09-12T21:08:32"
+  },
+  "48": {
+    "metric_id": "48",
+    "incident_id": "49",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 245,
+    "target_minutes": 63,
+    "recorded_by_user_id": "27",
+    "recorded_at": "2025-08-29T13:50:14"
+  },
+  "49": {
+    "metric_id": "49",
+    "incident_id": "35",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 114,
+    "target_minutes": 52,
+    "recorded_by_user_id": "26",
+    "recorded_at": "2025-09-15T04:29:52"
+  },
+  "50": {
+    "metric_id": "50",
+    "incident_id": "4",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 131,
+    "target_minutes": 29,
+    "recorded_by_user_id": "28",
+    "recorded_at": "2025-09-13T04:28:28"
+  },
+  "51": {
+    "metric_id": "51",
+    "incident_id": "43",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 167,
+    "target_minutes": 36,
+    "recorded_by_user_id": "27",
+    "recorded_at": "2025-09-08T22:58:10"
+  },
+  "52": {
+    "metric_id": "52",
+    "incident_id": "22",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 407,
+    "target_minutes": 56,
+    "recorded_by_user_id": "26",
+    "recorded_at": "2025-09-01T22:56:42"
+  },
+  "53": {
+    "metric_id": "53",
+    "incident_id": "12",
+    "metric_type": "escalation_time",
+    "calculated_value_minutes": 139,
+    "target_minutes": 105,
+    "recorded_by_user_id": "25",
+    "recorded_at": "2025-09-23T16:15:34"
+  },
+  "54": {
+    "metric_id": "54",
+    "incident_id": "43",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 175,
+    "target_minutes": 44,
+    "recorded_by_user_id": "3",
+    "recorded_at": "2025-09-03T16:11:34"
+  },
+  "55": {
+    "metric_id": "55",
+    "incident_id": "22",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 179,
+    "target_minutes": 14,
+    "recorded_by_user_id": "14",
+    "recorded_at": "2025-09-02T05:08:58"
+  },
+  "56": {
+    "metric_id": "56",
+    "incident_id": "21",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 130,
+    "target_minutes": 26,
+    "recorded_by_user_id": "12",
+    "recorded_at": "2025-08-28T02:57:51"
+  },
+  "57": {
+    "metric_id": "57",
+    "incident_id": "25",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 147,
+    "target_minutes": 23,
+    "recorded_by_user_id": "14",
+    "recorded_at": "2025-09-20T14:00:39"
+  },
+  "58": {
+    "metric_id": "58",
+    "incident_id": "31",
+    "metric_type": "detection_time",
+    "calculated_value_minutes": 103,
+    "target_minutes": 12,
+    "recorded_by_user_id": "23",
+    "recorded_at": "2025-09-16T10:25:32"
+  },
+  "59": {
+    "metric_id": "59",
+    "incident_id": "10",
+    "metric_type": "response_time",
+    "calculated_value_minutes": 207,
+    "target_minutes": 48,
+    "recorded_by_user_id": "30",
+    "recorded_at": "2025-09-09T18:29:31"
+  }
+}

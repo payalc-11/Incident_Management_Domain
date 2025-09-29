@@ -1,234 +1,551 @@
 {
   "1": {
     "report_id": "1",
-    "incident_id": "35",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "10",
-    "status": "reviewed",
-    "generated_at": "2025-09-09T14:51:37"
+    "incident_id": "1",
+    "report_type": "post_mortem",
+    "generated_by_user": "21",
+    "status": "published",
+    "generated_at": "2025-09-28T23:09:45",
+    "created_at": "2025-09-28T23:09:45"
   },
   "2": {
     "report_id": "2",
-    "incident_id": "6",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "23",
-    "status": "reviewed",
-    "generated_at": "2025-09-04T00:11:05"
+    "incident_id": "2",
+    "report_type": "post_mortem",
+    "generated_by_user": "7",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:37",
+    "created_at": "2025-09-28T23:10:37"
   },
   "3": {
     "report_id": "3",
-    "incident_id": "31",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "11",
-    "status": "reviewed",
-    "generated_at": "2025-09-18T20:27:16"
+    "incident_id": "3",
+    "report_type": "technical_details",
+    "generated_by_user": "48",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:18",
+    "created_at": "2025-09-28T23:10:18"
   },
   "4": {
     "report_id": "4",
-    "incident_id": "12",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "18",
-    "status": "published",
-    "generated_at": "2025-09-05T11:06:51"
+    "incident_id": "4",
+    "report_type": "technical_details",
+    "generated_by_user": "21",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:11:05",
+    "created_at": "2025-09-28T23:11:05"
   },
   "5": {
     "report_id": "5",
-    "incident_id": "36",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "17",
-    "status": "draft",
-    "generated_at": "2025-09-22T10:17:44"
+    "incident_id": "5",
+    "report_type": "technical_details",
+    "generated_by_user": "29",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:12:19",
+    "created_at": "2025-09-28T23:12:19"
   },
   "6": {
     "report_id": "6",
-    "incident_id": "12",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "20",
+    "incident_id": "6",
+    "report_type": "compliance_report",
+    "generated_by_user": "16",
     "status": "published",
-    "generated_at": "2025-09-20T07:06:54"
+    "generated_at": "2025-09-28T23:10:24",
+    "created_at": "2025-09-28T23:10:24"
   },
   "7": {
     "report_id": "7",
-    "incident_id": "24",
-    "report_type": "postmortem",
-    "generated_by_user_id": "25",
-    "status": "reviewed",
-    "generated_at": "2025-09-25T04:58:50"
+    "incident_id": "6",
+    "report_type": "executive_summary",
+    "generated_by_user": "23",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:40",
+    "created_at": "2025-09-28T23:10:40"
   },
   "8": {
     "report_id": "8",
-    "incident_id": "9",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "13",
+    "incident_id": "7",
+    "report_type": "executive_summary",
+    "generated_by_user": "4",
     "status": "draft",
-    "generated_at": "2025-09-14T04:45:10"
+    "generated_at": "2025-09-28T23:12:11",
+    "created_at": "2025-09-28T23:12:11"
   },
   "9": {
     "report_id": "9",
-    "incident_id": "50",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "12",
+    "incident_id": "8",
+    "report_type": "business_impact",
+    "generated_by_user": "11",
     "status": "draft",
-    "generated_at": "2025-09-11T13:40:24"
+    "generated_at": "2025-09-28T23:11:50",
+    "created_at": "2025-09-28T23:11:50"
   },
   "10": {
     "report_id": "10",
-    "incident_id": "32",
-    "report_type": "postmortem",
-    "generated_by_user_id": "30",
-    "status": "completed",
-    "generated_at": "2025-09-11T03:19:31"
+    "incident_id": "8",
+    "report_type": "business_impact",
+    "generated_by_user": "25",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:56",
+    "created_at": "2025-09-28T23:10:56"
   },
   "11": {
     "report_id": "11",
-    "incident_id": "11",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "28",
-    "status": "draft",
-    "generated_at": "2025-08-28T16:05:39"
+    "incident_id": "9",
+    "report_type": "executive_summary",
+    "generated_by_user": "31",
+    "status": "published",
+    "generated_at": "2025-09-28T23:11:23",
+    "created_at": "2025-09-28T23:11:23"
   },
   "12": {
     "report_id": "12",
-    "incident_id": "25",
-    "report_type": "postmortem",
-    "generated_by_user_id": "8",
+    "incident_id": "9",
+    "report_type": "compliance_report",
+    "generated_by_user": "11",
     "status": "draft",
-    "generated_at": "2025-09-09T20:56:55"
+    "generated_at": "2025-09-28T23:11:43",
+    "created_at": "2025-09-28T23:11:43"
   },
   "13": {
     "report_id": "13",
-    "incident_id": "1",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "30",
-    "status": "published",
-    "generated_at": "2025-09-10T19:41:36"
+    "incident_id": "10",
+    "report_type": "executive_summary",
+    "generated_by_user": "19",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:11:37",
+    "created_at": "2025-09-28T23:11:37"
   },
   "14": {
     "report_id": "14",
-    "incident_id": "3",
-    "report_type": "postmortem",
-    "generated_by_user_id": "20",
-    "status": "draft",
-    "generated_at": "2025-09-06T21:56:00"
+    "incident_id": "11",
+    "report_type": "technical_details",
+    "generated_by_user": "7",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:50",
+    "created_at": "2025-09-28T23:10:50"
   },
   "15": {
     "report_id": "15",
-    "incident_id": "43",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "8",
-    "status": "reviewed",
-    "generated_at": "2025-09-16T19:37:02"
+    "incident_id": "11",
+    "report_type": "technical_details",
+    "generated_by_user": "11",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:11:10",
+    "created_at": "2025-09-28T23:11:10"
   },
   "16": {
     "report_id": "16",
-    "incident_id": "16",
-    "report_type": "postmortem",
-    "generated_by_user_id": "22",
+    "incident_id": "12",
+    "report_type": "executive_summary",
+    "generated_by_user": "36",
     "status": "completed",
-    "generated_at": "2025-09-20T08:52:01"
+    "generated_at": "2025-09-28T23:11:42",
+    "created_at": "2025-09-28T23:11:42"
   },
   "17": {
     "report_id": "17",
-    "incident_id": "40",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "3",
-    "status": "completed",
-    "generated_at": "2025-08-30T19:31:26"
+    "incident_id": "13",
+    "report_type": "post_mortem",
+    "generated_by_user": "40",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:46",
+    "created_at": "2025-09-28T23:10:46"
   },
   "18": {
     "report_id": "18",
-    "incident_id": "33",
-    "report_type": "postmortem",
-    "generated_by_user_id": "21",
-    "status": "draft",
-    "generated_at": "2025-09-06T03:01:56"
+    "incident_id": "13",
+    "report_type": "executive_summary",
+    "generated_by_user": "28",
+    "status": "published",
+    "generated_at": "2025-09-28T23:10:52",
+    "created_at": "2025-09-28T23:10:52"
   },
   "19": {
     "report_id": "19",
-    "incident_id": "47",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "14",
-    "status": "reviewed",
-    "generated_at": "2025-09-02T13:59:19"
+    "incident_id": "14",
+    "report_type": "post_mortem",
+    "generated_by_user": "28",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:12:21",
+    "created_at": "2025-09-28T23:12:21"
   },
   "20": {
     "report_id": "20",
-    "incident_id": "28",
-    "report_type": "postmortem",
-    "generated_by_user_id": "2",
-    "status": "published",
-    "generated_at": "2025-09-13T06:21:42"
+    "incident_id": "15",
+    "report_type": "executive_summary",
+    "generated_by_user": "22",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:11:18",
+    "created_at": "2025-09-28T23:11:18"
   },
   "21": {
     "report_id": "21",
-    "incident_id": "44",
-    "report_type": "client_summary",
-    "generated_by_user_id": "24",
-    "status": "reviewed",
-    "generated_at": "2025-09-09T23:39:41"
+    "incident_id": "16",
+    "report_type": "business_impact",
+    "generated_by_user": "45",
+    "status": "published",
+    "generated_at": "2025-09-28T23:10:31",
+    "created_at": "2025-09-28T23:10:31"
   },
   "22": {
     "report_id": "22",
-    "incident_id": "22",
-    "report_type": "client_summary",
-    "generated_by_user_id": "23",
-    "status": "reviewed",
-    "generated_at": "2025-09-03T16:04:08"
+    "incident_id": "17",
+    "report_type": "technical_details",
+    "generated_by_user": "20",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:40",
+    "created_at": "2025-09-28T23:10:40"
   },
   "23": {
     "report_id": "23",
-    "incident_id": "42",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "14",
+    "incident_id": "17",
+    "report_type": "executive_summary",
+    "generated_by_user": "4",
     "status": "draft",
-    "generated_at": "2025-08-29T20:12:44"
+    "generated_at": "2025-09-28T23:10:26",
+    "created_at": "2025-09-28T23:10:26"
   },
   "24": {
     "report_id": "24",
-    "incident_id": "11",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "1",
-    "status": "published",
-    "generated_at": "2025-09-04T01:04:39"
+    "incident_id": "18",
+    "report_type": "compliance_report",
+    "generated_by_user": "4",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:21",
+    "created_at": "2025-09-28T23:10:21"
   },
   "25": {
     "report_id": "25",
-    "incident_id": "6",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "12",
-    "status": "draft",
-    "generated_at": "2025-09-13T08:36:37"
+    "incident_id": "18",
+    "report_type": "executive_summary",
+    "generated_by_user": "28",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:09:52",
+    "created_at": "2025-09-28T23:09:52"
   },
   "26": {
     "report_id": "26",
-    "incident_id": "23",
-    "report_type": "technical_analysis",
-    "generated_by_user_id": "5",
+    "incident_id": "19",
+    "report_type": "post_mortem",
+    "generated_by_user": "31",
     "status": "completed",
-    "generated_at": "2025-09-01T11:45:29"
+    "generated_at": "2025-09-28T23:10:11",
+    "created_at": "2025-09-28T23:10:11"
   },
   "27": {
     "report_id": "27",
-    "incident_id": "6",
-    "report_type": "client_summary",
-    "generated_by_user_id": "13",
-    "status": "published",
-    "generated_at": "2025-09-15T02:19:51"
+    "incident_id": "19",
+    "report_type": "executive_summary",
+    "generated_by_user": "2",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:42",
+    "created_at": "2025-09-28T23:10:42"
   },
   "28": {
     "report_id": "28",
-    "incident_id": "5",
-    "report_type": "executive_summary",
-    "generated_by_user_id": "17",
+    "incident_id": "20",
+    "report_type": "technical_details",
+    "generated_by_user": "6",
     "status": "draft",
-    "generated_at": "2025-09-14T09:22:51"
+    "generated_at": "2025-09-28T23:09:52",
+    "created_at": "2025-09-28T23:09:52"
   },
   "29": {
     "report_id": "29",
-    "incident_id": "24",
-    "report_type": "postmortem",
-    "generated_by_user_id": "2",
+    "incident_id": "21",
+    "report_type": "technical_details",
+    "generated_by_user": "26",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:11:39",
+    "created_at": "2025-09-28T23:11:39"
+  },
+  "30": {
+    "report_id": "30",
+    "incident_id": "22",
+    "report_type": "technical_details",
+    "generated_by_user": "6",
     "status": "published",
-    "generated_at": "2025-09-05T14:11:20"
+    "generated_at": "2025-09-28T23:12:18",
+    "created_at": "2025-09-28T23:12:18"
+  },
+  "31": {
+    "report_id": "31",
+    "incident_id": "22",
+    "report_type": "post_mortem",
+    "generated_by_user": "25",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:09",
+    "created_at": "2025-09-28T23:10:09"
+  },
+  "32": {
+    "report_id": "32",
+    "incident_id": "23",
+    "report_type": "business_impact",
+    "generated_by_user": "24",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:11",
+    "created_at": "2025-09-28T23:10:11"
+  },
+  "33": {
+    "report_id": "33",
+    "incident_id": "23",
+    "report_type": "business_impact",
+    "generated_by_user": "3",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:17",
+    "created_at": "2025-09-28T23:10:17"
+  },
+  "34": {
+    "report_id": "34",
+    "incident_id": "24",
+    "report_type": "business_impact",
+    "generated_by_user": "17",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:11:25",
+    "created_at": "2025-09-28T23:11:25"
+  },
+  "35": {
+    "report_id": "35",
+    "incident_id": "24",
+    "report_type": "technical_details",
+    "generated_by_user": "37",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:32",
+    "created_at": "2025-09-28T23:10:32"
+  },
+  "36": {
+    "report_id": "36",
+    "incident_id": "25",
+    "report_type": "executive_summary",
+    "generated_by_user": "6",
+    "status": "published",
+    "generated_at": "2025-09-28T23:11:52",
+    "created_at": "2025-09-28T23:11:52"
+  },
+  "37": {
+    "report_id": "37",
+    "incident_id": "26",
+    "report_type": "post_mortem",
+    "generated_by_user": "27",
+    "status": "published",
+    "generated_at": "2025-09-28T23:11:36",
+    "created_at": "2025-09-28T23:11:36"
+  },
+  "38": {
+    "report_id": "38",
+    "incident_id": "26",
+    "report_type": "compliance_report",
+    "generated_by_user": "36",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:11:54",
+    "created_at": "2025-09-28T23:11:54"
+  },
+  "39": {
+    "report_id": "39",
+    "incident_id": "27",
+    "report_type": "post_mortem",
+    "generated_by_user": "27",
+    "status": "published",
+    "generated_at": "2025-09-28T23:10:34",
+    "created_at": "2025-09-28T23:10:34"
+  },
+  "40": {
+    "report_id": "40",
+    "incident_id": "27",
+    "report_type": "business_impact",
+    "generated_by_user": "37",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:09:47",
+    "created_at": "2025-09-28T23:09:47"
+  },
+  "41": {
+    "report_id": "41",
+    "incident_id": "28",
+    "report_type": "technical_details",
+    "generated_by_user": "6",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:11",
+    "created_at": "2025-09-28T23:10:11"
+  },
+  "42": {
+    "report_id": "42",
+    "incident_id": "28",
+    "report_type": "executive_summary",
+    "generated_by_user": "33",
+    "status": "published",
+    "generated_at": "2025-09-28T23:10:37",
+    "created_at": "2025-09-28T23:10:37"
+  },
+  "43": {
+    "report_id": "43",
+    "incident_id": "29",
+    "report_type": "executive_summary",
+    "generated_by_user": "49",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:20",
+    "created_at": "2025-09-28T23:10:20"
+  },
+  "44": {
+    "report_id": "44",
+    "incident_id": "30",
+    "report_type": "compliance_report",
+    "generated_by_user": "14",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:54",
+    "created_at": "2025-09-28T23:10:54"
+  },
+  "45": {
+    "report_id": "45",
+    "incident_id": "31",
+    "report_type": "executive_summary",
+    "generated_by_user": "28",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:07",
+    "created_at": "2025-09-28T23:10:07"
+  },
+  "46": {
+    "report_id": "46",
+    "incident_id": "32",
+    "report_type": "compliance_report",
+    "generated_by_user": "41",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:39",
+    "created_at": "2025-09-28T23:10:39"
+  },
+  "47": {
+    "report_id": "47",
+    "incident_id": "32",
+    "report_type": "post_mortem",
+    "generated_by_user": "17",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:09:25",
+    "created_at": "2025-09-28T23:09:25"
+  },
+  "48": {
+    "report_id": "48",
+    "incident_id": "33",
+    "report_type": "executive_summary",
+    "generated_by_user": "25",
+    "status": "published",
+    "generated_at": "2025-09-28T23:11:38",
+    "created_at": "2025-09-28T23:11:38"
+  },
+  "49": {
+    "report_id": "49",
+    "incident_id": "34",
+    "report_type": "post_mortem",
+    "generated_by_user": "21",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:09:54",
+    "created_at": "2025-09-28T23:09:54"
+  },
+  "50": {
+    "report_id": "50",
+    "incident_id": "34",
+    "report_type": "post_mortem",
+    "generated_by_user": "30",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:10:32",
+    "created_at": "2025-09-28T23:10:32"
+  },
+  "51": {
+    "report_id": "51",
+    "incident_id": "35",
+    "report_type": "executive_summary",
+    "generated_by_user": "27",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:09:33",
+    "created_at": "2025-09-28T23:09:33"
+  },
+  "52": {
+    "report_id": "52",
+    "incident_id": "35",
+    "report_type": "compliance_report",
+    "generated_by_user": "37",
+    "status": "published",
+    "generated_at": "2025-09-28T23:09:35",
+    "created_at": "2025-09-28T23:09:35"
+  },
+  "53": {
+    "report_id": "53",
+    "incident_id": "36",
+    "report_type": "executive_summary",
+    "generated_by_user": "37",
+    "status": "completed",
+    "generated_at": "2025-09-28T23:11:43",
+    "created_at": "2025-09-28T23:11:43"
+  },
+  "54": {
+    "report_id": "54",
+    "incident_id": "37",
+    "report_type": "post_mortem",
+    "generated_by_user": "23",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:10:36",
+    "created_at": "2025-09-28T23:10:36"
+  },
+  "55": {
+    "report_id": "55",
+    "incident_id": "37",
+    "report_type": "technical_details",
+    "generated_by_user": "25",
+    "status": "published",
+    "generated_at": "2025-09-28T23:12:20",
+    "created_at": "2025-09-28T23:12:20"
+  },
+  "56": {
+    "report_id": "56",
+    "incident_id": "38",
+    "report_type": "post_mortem",
+    "generated_by_user": "39",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:09:54",
+    "created_at": "2025-09-28T23:09:54"
+  },
+  "57": {
+    "report_id": "57",
+    "incident_id": "38",
+    "report_type": "executive_summary",
+    "generated_by_user": "12",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:12:05",
+    "created_at": "2025-09-28T23:12:05"
+  },
+  "58": {
+    "report_id": "58",
+    "incident_id": "39",
+    "report_type": "compliance_report",
+    "generated_by_user": "40",
+    "status": "published",
+    "generated_at": "2025-09-28T23:11:27",
+    "created_at": "2025-09-28T23:11:27"
+  },
+  "59": {
+    "report_id": "59",
+    "incident_id": "39",
+    "report_type": "business_impact",
+    "generated_by_user": "3",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:09:48",
+    "created_at": "2025-09-28T23:09:48"
+  },
+  "60": {
+    "report_id": "60",
+    "incident_id": "40",
+    "report_type": "compliance_report",
+    "generated_by_user": "4",
+    "status": "published",
+    "generated_at": "2025-09-28T23:09:25",
+    "created_at": "2025-09-28T23:09:25"
+  },
+  "61": {
+    "report_id": "61",
+    "incident_id": "40",
+    "report_type": "business_impact",
+    "generated_by_user": "18",
+    "status": "draft",
+    "generated_at": "2025-09-28T23:11:48",
+    "created_at": "2025-09-28T23:11:48"
   }
 }

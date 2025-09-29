@@ -1,218 +1,128 @@
 {
   "1": {
     "analysis_id": "1",
-    "incident_id": "17",
-    "conducted_by_user_id": "1",
-    "analysis_method": "five_whys",
+    "incident_id": "4",
+    "conducted_by_user": "17",
+    "analysis_method": "fishbone_diagram",
     "status": "completed",
-    "started_at": "2025-09-10T20:08:02",
-    "completed_at": "2025-09-14T10:34:44"
+    "completed_at": "2025-09-28T23:11:15",
+    "created_at": "2025-09-28T23:09:37"
   },
   "2": {
     "analysis_id": "2",
-    "incident_id": "16",
-    "conducted_by_user_id": "8",
+    "incident_id": "5",
+    "conducted_by_user": "39",
     "analysis_method": "fishbone_diagram",
-    "status": "in_progress",
-    "started_at": "2025-09-18T09:34:52",
-    "completed_at": null
+    "status": "completed",
+    "completed_at": "2025-09-28T23:10:48",
+    "created_at": "2025-09-28T23:11:09"
   },
   "3": {
     "analysis_id": "3",
-    "incident_id": "22",
-    "conducted_by_user_id": "24",
-    "analysis_method": "five_whys",
+    "incident_id": "10",
+    "conducted_by_user": "22",
+    "analysis_method": "timeline_analysis",
     "status": "completed",
-    "started_at": "2025-09-07T11:53:23",
-    "completed_at": "2025-09-25T15:21:01"
+    "completed_at": "2025-09-28T23:11:11",
+    "created_at": "2025-09-28T23:11:51"
   },
   "4": {
     "analysis_id": "4",
-    "incident_id": "21",
-    "conducted_by_user_id": "24",
-    "analysis_method": "fault_tree_analysis",
+    "incident_id": "12",
+    "conducted_by_user": "39",
+    "analysis_method": "fishbone_diagram",
     "status": "reviewed",
-    "started_at": "2025-08-29T03:04:23",
-    "completed_at": "2025-09-12T12:01:52"
+    "completed_at": "2025-09-28T23:11:51",
+    "created_at": "2025-09-28T23:09:27"
   },
   "5": {
     "analysis_id": "5",
-    "incident_id": "23",
-    "conducted_by_user_id": "3",
-    "analysis_method": "fault_tree_analysis",
-    "status": "in_progress",
-    "started_at": "2025-09-06T19:39:58",
-    "completed_at": null
+    "incident_id": "14",
+    "conducted_by_user": "13",
+    "analysis_method": "timeline_analysis",
+    "status": "reviewed",
+    "completed_at": "2025-09-28T23:12:11",
+    "created_at": "2025-09-28T23:11:49"
   },
   "6": {
     "analysis_id": "6",
-    "incident_id": "49",
-    "conducted_by_user_id": "3",
-    "analysis_method": "fault_tree_analysis",
+    "incident_id": "16",
+    "conducted_by_user": "19",
+    "analysis_method": "timeline_analysis",
     "status": "completed",
-    "started_at": "2025-09-14T14:26:13",
-    "completed_at": "2025-09-23T02:18:38"
+    "completed_at": "2025-09-28T23:11:10",
+    "created_at": "2025-09-28T23:11:24"
   },
   "7": {
     "analysis_id": "7",
-    "incident_id": "20",
-    "conducted_by_user_id": "7",
-    "analysis_method": "five_whys",
-    "status": "completed",
-    "started_at": "2025-09-24T20:46:18",
-    "completed_at": "2025-09-26T10:18:03"
+    "incident_id": "17",
+    "conducted_by_user": "21",
+    "analysis_method": "timeline_analysis",
+    "status": "in_progress",
+    "completed_at": null,
+    "created_at": "2025-09-28T23:09:23"
   },
   "8": {
     "analysis_id": "8",
-    "incident_id": "40",
-    "conducted_by_user_id": "5",
+    "incident_id": "19",
+    "conducted_by_user": "8",
     "analysis_method": "fishbone_diagram",
     "status": "completed",
-    "started_at": "2025-09-10T23:36:46",
-    "completed_at": "2025-09-18T04:16:59"
+    "completed_at": "2025-09-28T23:12:22",
+    "created_at": "2025-09-28T23:10:52"
   },
   "9": {
     "analysis_id": "9",
-    "incident_id": "40",
-    "conducted_by_user_id": "21",
-    "analysis_method": "fault_tree_analysis",
-    "status": "completed",
-    "started_at": "2025-09-20T22:08:23",
-    "completed_at": "2025-09-22T08:38:30"
+    "incident_id": "22",
+    "conducted_by_user": "2",
+    "analysis_method": "timeline_analysis",
+    "status": "reviewed",
+    "completed_at": "2025-09-28T23:11:00",
+    "created_at": "2025-09-28T23:11:01"
   },
   "10": {
     "analysis_id": "10",
-    "incident_id": "1",
-    "conducted_by_user_id": "21",
-    "analysis_method": "fishbone_diagram",
+    "incident_id": "23",
+    "conducted_by_user": "29",
+    "analysis_method": "fault_tree_analysis",
     "status": "in_progress",
-    "started_at": "2025-09-05T06:44:48",
-    "completed_at": null
+    "completed_at": null,
+    "created_at": "2025-09-28T23:11:09"
   },
   "11": {
     "analysis_id": "11",
-    "incident_id": "20",
-    "conducted_by_user_id": "20",
-    "analysis_method": "fishbone_diagram",
-    "status": "completed",
-    "started_at": "2025-09-23T21:16:22",
-    "completed_at": "2025-09-26T13:06:59"
+    "incident_id": "24",
+    "conducted_by_user": "27",
+    "analysis_method": "timeline_analysis",
+    "status": "in_progress",
+    "completed_at": null,
+    "created_at": "2025-09-28T23:11:39"
   },
   "12": {
     "analysis_id": "12",
-    "incident_id": "44",
-    "conducted_by_user_id": "8",
-    "analysis_method": "fault_tree_analysis",
-    "status": "completed",
-    "started_at": "2025-09-18T15:45:19",
-    "completed_at": "2025-09-25T17:18:50"
+    "incident_id": "35",
+    "conducted_by_user": "27",
+    "analysis_method": "five_whys",
+    "status": "reviewed",
+    "completed_at": "2025-09-28T23:11:57",
+    "created_at": "2025-09-28T23:11:41"
   },
   "13": {
     "analysis_id": "13",
-    "incident_id": "34",
-    "conducted_by_user_id": "26",
+    "incident_id": "36",
+    "conducted_by_user": "45",
     "analysis_method": "five_whys",
-    "status": "reviewed",
-    "started_at": "2025-09-17T02:01:20",
-    "completed_at": "2025-09-21T00:37:40"
+    "status": "completed",
+    "completed_at": "2025-09-28T23:12:04",
+    "created_at": "2025-09-28T23:11:56"
   },
   "14": {
     "analysis_id": "14",
-    "incident_id": "12",
-    "conducted_by_user_id": "1",
-    "analysis_method": "fishbone_diagram",
-    "status": "completed",
-    "started_at": "2025-08-29T03:14:34",
-    "completed_at": "2025-09-23T16:47:35"
-  },
-  "15": {
-    "analysis_id": "15",
-    "incident_id": "30",
-    "conducted_by_user_id": "22",
-    "analysis_method": "fault_tree_analysis",
-    "status": "in_progress",
-    "started_at": "2025-09-05T01:46:55",
-    "completed_at": null
-  },
-  "16": {
-    "analysis_id": "16",
-    "incident_id": "40",
-    "conducted_by_user_id": "24",
-    "analysis_method": "timeline_analysis",
-    "status": "in_progress",
-    "started_at": "2025-09-14T01:15:04",
-    "completed_at": null
-  },
-  "17": {
-    "analysis_id": "17",
-    "incident_id": "10",
-    "conducted_by_user_id": "19",
-    "analysis_method": "timeline_analysis",
-    "status": "in_progress",
-    "started_at": "2025-09-17T20:40:42",
-    "completed_at": null
-  },
-  "18": {
-    "analysis_id": "18",
-    "incident_id": "36",
-    "conducted_by_user_id": "2",
-    "analysis_method": "fault_tree_analysis",
-    "status": "reviewed",
-    "started_at": "2025-08-31T15:58:50",
-    "completed_at": "2025-09-24T03:53:09"
-  },
-  "19": {
-    "analysis_id": "19",
-    "incident_id": "22",
-    "conducted_by_user_id": "28",
-    "analysis_method": "timeline_analysis",
-    "status": "completed",
-    "started_at": "2025-09-23T22:57:44",
-    "completed_at": "2025-09-24T13:53:37"
-  },
-  "20": {
-    "analysis_id": "20",
-    "incident_id": "3",
-    "conducted_by_user_id": "22",
-    "analysis_method": "fishbone_diagram",
-    "status": "completed",
-    "started_at": "2025-08-31T22:24:20",
-    "completed_at": "2025-09-26T03:58:03"
-  },
-  "21": {
-    "analysis_id": "21",
-    "incident_id": "24",
-    "conducted_by_user_id": "4",
-    "analysis_method": "timeline_analysis",
-    "status": "in_progress",
-    "started_at": "2025-09-08T00:17:32",
-    "completed_at": null
-  },
-  "22": {
-    "analysis_id": "22",
-    "incident_id": "4",
-    "conducted_by_user_id": "17",
-    "analysis_method": "fault_tree_analysis",
-    "status": "completed",
-    "started_at": "2025-09-25T23:31:15",
-    "completed_at": "2025-09-26T07:51:24"
-  },
-  "23": {
-    "analysis_id": "23",
-    "incident_id": "33",
-    "conducted_by_user_id": "16",
+    "incident_id": "39",
+    "conducted_by_user": "42",
     "analysis_method": "five_whys",
-    "status": "completed",
-    "started_at": "2025-09-24T03:34:56",
-    "completed_at": "2025-09-25T17:23:46"
-  },
-  "24": {
-    "analysis_id": "24",
-    "incident_id": "21",
-    "conducted_by_user_id": "28",
-    "analysis_method": "timeline_analysis",
-    "status": "reviewed",
-    "started_at": "2025-09-14T01:28:45",
-    "completed_at": "2025-09-18T09:28:30"
+    "status": "in_progress",
+    "completed_at": null,
+    "created_at": "2025-09-28T23:10:18"
   }
 }

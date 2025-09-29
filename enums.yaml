@@ -1,0 +1,244 @@
+enums:
+  clients:
+    client_type:
+      - enterprise
+      - mid_market
+      - small_business
+      - startup
+    status:
+      - active
+      - inactive
+      - suspended
+
+  users:
+    role:
+      - system_administrator
+      - incident_manager
+      - technical_support
+      - account_manager
+      - executive
+      - client_contact
+      - vendor_contact
+    status:
+      - active
+      - inactive
+      - on_leave
+
+  vendors:
+    vendor_type:
+      - technology_provider
+      - infrastructure_provider
+      - security_provider
+      - consulting_services
+      - maintenance_services
+      - cloud_provider
+      - payment_processor
+    status:
+      - active
+      - inactive
+      - suspended
+
+  products:
+    status:
+      - active
+      - deprecated
+      - maintenance
+      - end_of_life
+
+  infrastructure_components:
+    environment:
+      - production
+      - staging
+      - development
+      - testing
+    operational_status:
+      - operational
+      - degraded
+      - offline
+      - maintenance
+
+  subscriptions:
+    subscription_type:
+      - trial
+      - limited_service
+      - full_service
+      - custom
+    sla_tier:
+      - basic
+      - standard
+      - premium
+    status:
+      - active
+      - inactive
+      - cancelled
+      - expired
+
+  service_level_agreements:
+    severity_level:
+      - P1
+      - P2
+      - P3
+      - P4
+
+  incidents:
+    severity:
+      - P1
+      - P2
+      - P3
+      - P4
+    impact_level:
+      - low
+      - medium
+      - high
+      - critical
+    urgency_level:
+      - low
+      - medium
+      - high
+      - critical
+    status:
+      - open
+      - investigating
+      - in_progress
+      - resolved
+      - closed
+
+  incident_escalations:
+    escalation_level:
+      - management
+      - technical
+      - executive
+      - vendor
+    status:
+      - active
+      - resolved
+      - cancelled
+
+  communications:
+    recipient_type:
+      - client_contacts
+      - executive_team
+      - technical_team
+      - all_stakeholders
+    delivery_method:
+      - email
+      - sms
+      - phone
+      - chat
+      - dashboard_notification
+    delivery_status:
+      - pending
+      - sent
+      - delivered
+      - failed
+
+  workarounds:
+    effectiveness_level:
+      - full_mitigation
+      - partial_mitigation
+      - minimal_impact
+    status:
+      - active
+      - inactive
+      - replaced
+
+  root_cause_analysis:
+    analysis_method:
+      - five_whys
+      - fishbone_diagram
+      - fault_tree_analysis
+      - timeline_analysis
+    status:
+      - in_progress
+      - completed
+      - reviewed
+
+  change_requests:
+    change_type:
+      - normal
+      - standard
+      - upgrade
+      - emergency
+    risk_level:
+      - low
+      - medium
+      - high
+    status:
+      - requested
+      - in_progress
+      - scheduled
+      - rolled_back
+      - completed
+      - failed
+      - approved
+
+  rollback_requests:
+    status:
+      - requested
+      - in_progress
+      - failed
+      - approved
+
+  performance_metrics:
+    metric_type:
+      - response_time
+      - resolution_time
+      - detection_time
+      - escalation_time
+
+  incident_reports:
+    report_type:
+      - executive_summary
+      - compliance_report
+      - technical_details
+      - business_impact
+      - post_mortem
+    status:
+      - completed
+      - draft
+      - published
+
+  knowledge_base_articles:
+    article_type:
+      - troubleshooting
+      - resolution_procedure
+      - prevention_guide
+      - faq
+    category:
+      - technical
+      - process
+      - communication
+      - escalation
+    status:
+      - draft
+      - under_review
+      - archived
+      - published
+
+  post_incident_reviews:
+    overall_rating:
+      - excellent
+      - good
+      - satisfactory
+      - needs_improvement
+      - poor
+    status:
+      - scheduled
+      - completed
+      - cancelled
+
+  problem_tickets:
+    status:
+      - open
+      - investigating
+      - in_progress
+      - resolved
+      - closed
+
+  work_orders:
+    status:
+      - created
+      - assigned
+      - in_progress
+      - completed
+      - cancelled

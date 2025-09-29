@@ -1,0 +1,3131 @@
+{
+  "params": [
+    {
+      "interface": "interface_1",
+      "api_name": "create_client",
+      "params": [
+        {
+          "name": "client_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "client_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "country",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "industry",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_client_subscription",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "subscription_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "sla_tier",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "end_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rto_hours",
+          "type": "int",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "create_sla_record",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "response_time_minutes",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "resolution_time_hours",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "availability_percentage",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "discover_client",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "discover_subscription",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "sla_tier",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "discover_user",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "generate_incident_report",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "report_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "generated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "log_audit",
+      "params": [
+        {
+          "name": "action_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "performed_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "log_metric",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "metric_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "calculated_value_minutes",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "recorded_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "target_minutes",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "manage_sla_record",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "response_time_minutes",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "resolution_time_hours",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "availability_percentage",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "record_kb_article",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "article_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "created_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "reviewer_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "register_user",
+      "params": [
+        {
+          "name": "name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "department",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "timezone",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "report_incident",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "impact_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "urgency_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "component_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "reporter_user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "detection_timestamp",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolution_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_client",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_1",
+      "api_name": "update_user",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_client_subscription",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "subscription_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "sla_tier",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "start_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "end_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "rto_hours",
+          "type": "int",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_component",
+      "params": [
+        {
+          "name": "component_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "component_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "environment",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "port_number",
+          "type": "int",
+          "optional": true
+        },
+        {
+          "name": "operational_status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "add_product",
+      "params": [
+        {
+          "name": "product_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "product_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "version",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "support_vendor_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "conduct_rca",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "conducted_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "analysis_method",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "completed_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_audit",
+      "params": [
+        {
+          "name": "action_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "performed_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "create_vendor",
+      "params": [
+        {
+          "name": "vendor_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "vendor_email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "vendor_phone",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "vendor_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "discover_component",
+      "params": [
+        {
+          "name": "component_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "component_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "component_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "environment",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "operational_status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "discover_incident",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "reporter_user_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "discover_product",
+      "params": [
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "support_vendor_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "discover_vendor",
+      "params": [
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_phone",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "file_incident",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "impact_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "urgency_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "component_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "reporter_user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "detection_timestamp",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolution_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "log_incident_update",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "update_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "update_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "updated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "update_timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "record_communication",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "sender_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "recipient_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "communication_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "delivery_method",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "delivery_status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "recipient_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "sent_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "record_workaround",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "implemented_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "effectiveness_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "implemented_at",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "submit_escalation",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_to_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalation_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_at",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "reason",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_2",
+      "api_name": "update_incident",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolution_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_communication",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "sender_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "recipient_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "communication_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "delivery_method",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "delivery_status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "recipient_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "sent_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_incident_update",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "update_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "update_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "updated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "update_timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "add_workaround",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "implemented_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "effectiveness_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "implemented_at",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "amend_incident",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolution_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "amend_user",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_escalation",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_to_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalation_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_at",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "reason",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_ticket",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "issued_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "create_workorder",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "work_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "created_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "change_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "problem_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "get_incident",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "severity",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "reporter_user_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "get_user",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "record_rca",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "conducted_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "analysis_method",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "completed_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "transfer_to_human",
+      "params": [
+        {
+          "name": "reason",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "context",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "escalation_level",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_ticket",
+      "params": [
+        {
+          "name": "ticket_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "update_workorder",
+      "params": [
+        {
+          "name": "workorder_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_3",
+      "api_name": "write_audit",
+      "params": [
+        {
+          "name": "action_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "performed_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_audit",
+      "params": [
+        {
+          "name": "action_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "performed_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_incident",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "impact_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "urgency_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "component_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "reporter_user_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "detection_timestamp",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolution_timestamp",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_incident_report",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "report_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "generated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_kb_article",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "article_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "created_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "reviewer_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_metric",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "metric_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "calculated_value_minutes",
+          "type": "float",
+          "optional": false
+        },
+        {
+          "name": "recorded_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "target_minutes",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_ticket",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "issued_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "add_workorder",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "work_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "created_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "change_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "problem_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "create_rca",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "conducted_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "analysis_method",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "completed_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "create_rollback_request",
+      "params": [
+        {
+          "name": "change_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "requesting_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "approved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "completed_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "edit_client",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "edit_ticket",
+      "params": [
+        {
+          "name": "ticket_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "edit_workorder",
+      "params": [
+        {
+          "name": "workorder_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_set",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_client",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_component",
+      "params": [
+        {
+          "name": "component_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "component_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "component_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "environment",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "operational_status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "list_subscription",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "sla_tier",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "log_sla_record",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "response_time_minutes",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "resolution_time_hours",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "availability_percentage",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "submit_change_request",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "risk_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "requesting_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "approved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_4",
+      "api_name": "submit_post_incident_review",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "facilitator_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "scheduled_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "overall_rating",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_component",
+      "params": [
+        {
+          "name": "component_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "component_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "environment",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "location",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "port_number",
+          "type": "int",
+          "optional": true
+        },
+        {
+          "name": "operational_status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_product",
+      "params": [
+        {
+          "name": "product_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "product_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "version",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "support_vendor_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "create_user",
+      "params": [
+        {
+          "name": "name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "department",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "timezone",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "escalate_to_human",
+      "params": [
+        {
+          "name": "reason",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "context",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "escalation_level",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "fetch_client",
+      "params": [
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "fetch_component",
+      "params": [
+        {
+          "name": "component_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "component_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "component_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "environment",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "operational_status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "fetch_product",
+      "params": [
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "support_vendor_id",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "fetch_subscription",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "product_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "sla_tier",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "fetch_user",
+      "params": [
+        {
+          "name": "user_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "role",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "client_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "fetch_vendor",
+      "params": [
+        {
+          "name": "vendor_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_name",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_email",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_phone",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "vendor_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "make_sla_record",
+      "params": [
+        {
+          "name": "subscription_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "severity_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "response_time_minutes",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "resolution_time_hours",
+          "type": "int",
+          "optional": false
+        },
+        {
+          "name": "availability_percentage",
+          "type": "float",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "record_audit",
+      "params": [
+        {
+          "name": "action_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "entity_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "performed_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "action_details",
+          "type": "dict",
+          "optional": false
+        },
+        {
+          "name": "timestamp",
+          "type": "str",
+          "optional": false
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_change_request",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "change_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "risk_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "requesting_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "approved_by_user",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_client",
+      "params": [
+        {
+          "name": "client_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "registration_number",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "contact_email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "client_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "country",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "industry",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_communication",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "sender_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "recipient_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "communication_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "delivery_method",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "delivery_status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "recipient_type",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "sent_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_escalation",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_to_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalation_level",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "escalated_at",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "reason",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "resolved_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_incident_report",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "report_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "generated_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_kb_article",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "article_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "category",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "created_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "reviewer_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_post_incident_review",
+      "params": [
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "facilitator_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "scheduled_date",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "overall_rating",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_vendor",
+      "params": [
+        {
+          "name": "vendor_name",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "vendor_email",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "vendor_phone",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "vendor_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "register_workorder",
+      "params": [
+        {
+          "name": "title",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "work_type",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "created_by_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "change_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "problem_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "assigned_to_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    },
+    {
+      "interface": "interface_5",
+      "api_name": "submit_rollback_request",
+      "params": [
+        {
+          "name": "change_id",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "requesting_user",
+          "type": "str",
+          "optional": false
+        },
+        {
+          "name": "incident_id",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "status",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "approved_by_user",
+          "type": "str",
+          "optional": true
+        },
+        {
+          "name": "completed_at",
+          "type": "str",
+          "optional": true
+        }
+      ],
+      "name_mismatch": false
+    }
+  ]
+}

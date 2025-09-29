@@ -1,452 +1,416 @@
 {
   "1": {
     "sla_id": "1",
-    "subscription_id": "13",
-    "severity_level": "P2",
-    "response_time_minutes": 60,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.48,
-    "created_at": "2024-06-06T09:59:51"
+    "subscription_id": "1",
+    "severity_level": "P1",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 24,
+    "availability_percentage": 97.1,
+    "created_at": "2025-04-30T23:28:49"
   },
   "2": {
     "sla_id": "2",
-    "subscription_id": "15",
-    "severity_level": "P3",
-    "response_time_minutes": 240,
-    "resolution_time_hours": 8,
-    "availability_percentage": 99.47,
-    "created_at": "2023-12-01T09:00:02"
+    "subscription_id": "2",
+    "severity_level": "P1",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 72,
+    "availability_percentage": 99.5,
+    "created_at": "2025-06-29T18:44:36"
   },
   "3": {
     "sla_id": "3",
-    "subscription_id": "9",
-    "severity_level": "P2",
-    "response_time_minutes": 60,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.06,
-    "created_at": "2023-12-04T19:30:54"
+    "subscription_id": "3",
+    "severity_level": "P1",
+    "response_time_minutes": 15,
+    "resolution_time_hours": 8,
+    "availability_percentage": 98.0,
+    "created_at": "2025-03-13T19:46:37"
   },
   "4": {
     "sla_id": "4",
-    "subscription_id": "14",
-    "severity_level": "P4",
-    "response_time_minutes": 480,
-    "resolution_time_hours": 48,
-    "availability_percentage": 99.89,
-    "created_at": "2025-09-09T03:29:14"
+    "subscription_id": "4",
+    "severity_level": "P1",
+    "response_time_minutes": 30,
+    "resolution_time_hours": 8,
+    "availability_percentage": 98.1,
+    "created_at": "2025-05-04T13:28:37"
   },
   "5": {
     "sla_id": "5",
-    "subscription_id": "25",
+    "subscription_id": "5",
     "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.65,
-    "created_at": "2025-05-06T13:52:25"
+    "response_time_minutes": 240,
+    "resolution_time_hours": 72,
+    "availability_percentage": 96.6,
+    "created_at": "2024-10-02T11:34:27"
   },
   "6": {
     "sla_id": "6",
-    "subscription_id": "31",
-    "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 1,
-    "availability_percentage": 99.02,
-    "created_at": "2025-02-11T10:49:57"
+    "subscription_id": "5",
+    "severity_level": "P2",
+    "response_time_minutes": 240,
+    "resolution_time_hours": 48,
+    "availability_percentage": 96.4,
+    "created_at": "2024-11-11T04:11:10"
   },
   "7": {
     "sla_id": "7",
-    "subscription_id": "13",
-    "severity_level": "P2",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 12,
-    "availability_percentage": 99.29,
-    "created_at": "2024-10-04T11:31:21"
+    "subscription_id": "5",
+    "severity_level": "P3",
+    "response_time_minutes": 240,
+    "resolution_time_hours": 48,
+    "availability_percentage": 97.1,
+    "created_at": "2024-10-27T22:46:10"
   },
   "8": {
     "sla_id": "8",
-    "subscription_id": "7",
-    "severity_level": "P3",
-    "response_time_minutes": 120,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.5,
-    "created_at": "2024-05-05T00:21:44"
+    "subscription_id": "6",
+    "severity_level": "P1",
+    "response_time_minutes": 15,
+    "resolution_time_hours": 72,
+    "availability_percentage": 98.2,
+    "created_at": "2025-09-06T16:35:39"
   },
   "9": {
     "sla_id": "9",
-    "subscription_id": "31",
-    "severity_level": "P4",
+    "subscription_id": "6",
+    "severity_level": "P2",
     "response_time_minutes": 240,
-    "resolution_time_hours": 48,
-    "availability_percentage": 99.19,
-    "created_at": "2024-12-08T16:23:29"
+    "resolution_time_hours": 72,
+    "availability_percentage": 99.2,
+    "created_at": "2025-06-24T02:12:56"
   },
   "10": {
     "sla_id": "10",
-    "subscription_id": "9",
-    "severity_level": "P4",
-    "response_time_minutes": 720,
-    "resolution_time_hours": 48,
-    "availability_percentage": 99.86,
-    "created_at": "2024-06-08T01:57:07"
+    "subscription_id": "6",
+    "severity_level": "P3",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 24,
+    "availability_percentage": 99.4,
+    "created_at": "2025-09-14T18:40:15"
   },
   "11": {
     "sla_id": "11",
-    "subscription_id": "23",
-    "severity_level": "P2",
-    "response_time_minutes": 30,
-    "resolution_time_hours": 8,
-    "availability_percentage": 99.52,
-    "created_at": "2023-12-29T00:43:33"
+    "subscription_id": "7",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 24,
+    "availability_percentage": 97.0,
+    "created_at": "2024-11-25T14:43:57"
   },
   "12": {
     "sla_id": "12",
-    "subscription_id": "12",
+    "subscription_id": "7",
     "severity_level": "P2",
-    "response_time_minutes": 60,
+    "response_time_minutes": 15,
     "resolution_time_hours": 8,
-    "availability_percentage": 99.6,
-    "created_at": "2024-01-07T23:13:06"
+    "availability_percentage": 97.1,
+    "created_at": "2025-04-28T14:42:58"
   },
   "13": {
     "sla_id": "13",
-    "subscription_id": "35",
-    "severity_level": "P3",
-    "response_time_minutes": 120,
-    "resolution_time_hours": 16,
-    "availability_percentage": 99.53,
-    "created_at": "2024-03-18T18:36:32"
+    "subscription_id": "8",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 8,
+    "availability_percentage": 99.7,
+    "created_at": "2024-10-12T17:15:09"
   },
   "14": {
     "sla_id": "14",
-    "subscription_id": "6",
-    "severity_level": "P1",
-    "response_time_minutes": 10,
+    "subscription_id": "8",
+    "severity_level": "P2",
+    "response_time_minutes": 120,
     "resolution_time_hours": 2,
-    "availability_percentage": 99.49,
-    "created_at": "2023-11-30T14:21:44"
+    "availability_percentage": 95.4,
+    "created_at": "2025-08-18T20:26:07"
   },
   "15": {
     "sla_id": "15",
-    "subscription_id": "9",
-    "severity_level": "P2",
-    "response_time_minutes": 60,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.33,
-    "created_at": "2024-04-10T13:01:39"
+    "subscription_id": "8",
+    "severity_level": "P3",
+    "response_time_minutes": 15,
+    "resolution_time_hours": 2,
+    "availability_percentage": 97.1,
+    "created_at": "2025-02-19T02:47:18"
   },
   "16": {
     "sla_id": "16",
-    "subscription_id": "8",
-    "severity_level": "P2",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 8,
-    "availability_percentage": 99.48,
-    "created_at": "2024-06-11T16:59:53"
+    "subscription_id": "9",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 4,
+    "availability_percentage": 97.7,
+    "created_at": "2025-05-12T22:49:43"
   },
   "17": {
     "sla_id": "17",
-    "subscription_id": "11",
-    "severity_level": "P4",
-    "response_time_minutes": 480,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.56,
-    "created_at": "2024-04-28T15:17:25"
+    "subscription_id": "9",
+    "severity_level": "P2",
+    "response_time_minutes": 240,
+    "resolution_time_hours": 48,
+    "availability_percentage": 97.8,
+    "created_at": "2025-05-01T07:21:11"
   },
   "18": {
     "sla_id": "18",
-    "subscription_id": "6",
-    "severity_level": "P4",
-    "response_time_minutes": 720,
+    "subscription_id": "9",
+    "severity_level": "P3",
+    "response_time_minutes": 15,
     "resolution_time_hours": 24,
-    "availability_percentage": 99.54,
-    "created_at": "2023-10-25T16:17:35"
+    "availability_percentage": 96.7,
+    "created_at": "2024-11-25T05:46:48"
   },
   "19": {
     "sla_id": "19",
-    "subscription_id": "18",
-    "severity_level": "P3",
-    "response_time_minutes": 60,
-    "resolution_time_hours": 16,
-    "availability_percentage": 99.13,
-    "created_at": "2023-11-13T01:56:27"
+    "subscription_id": "10",
+    "severity_level": "P1",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 72,
+    "availability_percentage": 95.3,
+    "created_at": "2025-03-14T15:20:55"
   },
   "20": {
     "sla_id": "20",
-    "subscription_id": "23",
-    "severity_level": "P3",
+    "subscription_id": "10",
+    "severity_level": "P2",
     "response_time_minutes": 60,
-    "resolution_time_hours": 8,
-    "availability_percentage": 99.92,
-    "created_at": "2024-03-12T22:49:19"
+    "resolution_time_hours": 48,
+    "availability_percentage": 96.5,
+    "created_at": "2024-11-17T05:19:28"
   },
   "21": {
     "sla_id": "21",
-    "subscription_id": "13",
-    "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.79,
-    "created_at": "2024-11-21T20:36:28"
+    "subscription_id": "10",
+    "severity_level": "P3",
+    "response_time_minutes": 15,
+    "resolution_time_hours": 48,
+    "availability_percentage": 97.5,
+    "created_at": "2024-10-14T23:19:09"
   },
   "22": {
     "sla_id": "22",
-    "subscription_id": "35",
+    "subscription_id": "11",
     "severity_level": "P1",
-    "response_time_minutes": 5,
-    "resolution_time_hours": 1,
-    "availability_percentage": 99.12,
-    "created_at": "2025-02-03T04:16:48"
+    "response_time_minutes": 120,
+    "resolution_time_hours": 4,
+    "availability_percentage": 99.2,
+    "created_at": "2025-01-26T10:37:19"
   },
   "23": {
     "sla_id": "23",
-    "subscription_id": "32",
-    "severity_level": "P3",
-    "response_time_minutes": 120,
+    "subscription_id": "12",
+    "severity_level": "P1",
+    "response_time_minutes": 240,
     "resolution_time_hours": 8,
-    "availability_percentage": 99.87,
-    "created_at": "2024-08-30T12:54:04"
+    "availability_percentage": 95.6,
+    "created_at": "2025-02-17T08:14:40"
   },
   "24": {
     "sla_id": "24",
-    "subscription_id": "9",
+    "subscription_id": "12",
     "severity_level": "P2",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 12,
-    "availability_percentage": 99.82,
-    "created_at": "2023-10-23T11:14:11"
+    "response_time_minutes": 60,
+    "resolution_time_hours": 48,
+    "availability_percentage": 96.1,
+    "created_at": "2025-09-12T20:33:39"
   },
   "25": {
     "sla_id": "25",
     "subscription_id": "13",
     "severity_level": "P1",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 1,
-    "availability_percentage": 99.13,
-    "created_at": "2025-07-14T21:13:18"
+    "response_time_minutes": 240,
+    "resolution_time_hours": 48,
+    "availability_percentage": 98.0,
+    "created_at": "2025-09-26T02:27:24"
   },
   "26": {
     "sla_id": "26",
-    "subscription_id": "12",
+    "subscription_id": "13",
     "severity_level": "P2",
-    "response_time_minutes": 30,
-    "resolution_time_hours": 12,
-    "availability_percentage": 99.57,
-    "created_at": "2024-06-14T23:41:39"
+    "response_time_minutes": 240,
+    "resolution_time_hours": 2,
+    "availability_percentage": 98.0,
+    "created_at": "2025-08-03T21:50:37"
   },
   "27": {
     "sla_id": "27",
-    "subscription_id": "16",
-    "severity_level": "P3",
-    "response_time_minutes": 240,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.88,
-    "created_at": "2024-03-02T14:22:30"
+    "subscription_id": "14",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 2,
+    "availability_percentage": 95.9,
+    "created_at": "2025-08-28T23:46:32"
   },
   "28": {
     "sla_id": "28",
-    "subscription_id": "2",
-    "severity_level": "P3",
-    "response_time_minutes": 240,
-    "resolution_time_hours": 16,
-    "availability_percentage": 99.46,
-    "created_at": "2023-11-03T11:16:34"
+    "subscription_id": "14",
+    "severity_level": "P2",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 8,
+    "availability_percentage": 96.7,
+    "created_at": "2024-10-14T05:17:35"
   },
   "29": {
     "sla_id": "29",
-    "subscription_id": "2",
-    "severity_level": "P4",
-    "response_time_minutes": 480,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.27,
-    "created_at": "2025-03-31T20:52:10"
+    "subscription_id": "14",
+    "severity_level": "P3",
+    "response_time_minutes": 30,
+    "resolution_time_hours": 4,
+    "availability_percentage": 97.8,
+    "created_at": "2025-09-12T20:01:51"
   },
   "30": {
     "sla_id": "30",
-    "subscription_id": "16",
+    "subscription_id": "15",
     "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 1,
-    "availability_percentage": 99.34,
-    "created_at": "2024-07-30T05:54:17"
+    "response_time_minutes": 15,
+    "resolution_time_hours": 4,
+    "availability_percentage": 98.6,
+    "created_at": "2025-02-14T16:28:11"
   },
   "31": {
     "sla_id": "31",
-    "subscription_id": "17",
-    "severity_level": "P4",
-    "response_time_minutes": 240,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.28,
-    "created_at": "2025-05-17T14:25:22"
+    "subscription_id": "15",
+    "severity_level": "P2",
+    "response_time_minutes": 15,
+    "resolution_time_hours": 2,
+    "availability_percentage": 98.7,
+    "created_at": "2024-12-19T07:30:04"
   },
   "32": {
     "sla_id": "32",
-    "subscription_id": "23",
+    "subscription_id": "16",
     "severity_level": "P1",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 2,
-    "availability_percentage": 99.76,
-    "created_at": "2025-04-21T18:34:00"
+    "response_time_minutes": 120,
+    "resolution_time_hours": 24,
+    "availability_percentage": 97.2,
+    "created_at": "2025-06-20T14:46:06"
   },
   "33": {
     "sla_id": "33",
-    "subscription_id": "3",
-    "severity_level": "P3",
-    "response_time_minutes": 120,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.84,
-    "created_at": "2024-08-16T22:40:34"
+    "subscription_id": "17",
+    "severity_level": "P1",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 8,
+    "availability_percentage": 98.5,
+    "created_at": "2025-01-03T15:13:54"
   },
   "34": {
     "sla_id": "34",
-    "subscription_id": "35",
-    "severity_level": "P3",
+    "subscription_id": "18",
+    "severity_level": "P1",
     "response_time_minutes": 240,
-    "resolution_time_hours": 16,
-    "availability_percentage": 99.48,
-    "created_at": "2024-09-09T20:53:03"
+    "resolution_time_hours": 2,
+    "availability_percentage": 99.3,
+    "created_at": "2025-06-14T17:42:57"
   },
   "35": {
     "sla_id": "35",
-    "subscription_id": "8",
+    "subscription_id": "18",
     "severity_level": "P2",
-    "response_time_minutes": 60,
+    "response_time_minutes": 30,
     "resolution_time_hours": 4,
-    "availability_percentage": 99.84,
-    "created_at": "2025-05-06T18:35:42"
+    "availability_percentage": 98.7,
+    "created_at": "2024-11-07T15:33:07"
   },
   "36": {
     "sla_id": "36",
-    "subscription_id": "27",
-    "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 2,
-    "availability_percentage": 99.34,
-    "created_at": "2024-05-11T15:19:40"
+    "subscription_id": "18",
+    "severity_level": "P3",
+    "response_time_minutes": 15,
+    "resolution_time_hours": 72,
+    "availability_percentage": 95.4,
+    "created_at": "2025-02-13T01:58:11"
   },
   "37": {
     "sla_id": "37",
-    "subscription_id": "18",
-    "severity_level": "P2",
-    "response_time_minutes": 60,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.76,
-    "created_at": "2024-10-26T22:45:27"
+    "subscription_id": "19",
+    "severity_level": "P1",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 24,
+    "availability_percentage": 98.0,
+    "created_at": "2025-07-28T16:39:23"
   },
   "38": {
     "sla_id": "38",
-    "subscription_id": "24",
-    "severity_level": "P3",
-    "response_time_minutes": 240,
-    "resolution_time_hours": 16,
-    "availability_percentage": 99.21,
-    "created_at": "2023-12-05T16:37:40"
+    "subscription_id": "19",
+    "severity_level": "P2",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 8,
+    "availability_percentage": 96.1,
+    "created_at": "2025-05-04T03:56:19"
   },
   "39": {
     "sla_id": "39",
-    "subscription_id": "24",
+    "subscription_id": "20",
     "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.67,
-    "created_at": "2025-02-02T20:55:32"
+    "response_time_minutes": 15,
+    "resolution_time_hours": 8,
+    "availability_percentage": 97.1,
+    "created_at": "2025-09-07T02:10:43"
   },
   "40": {
     "sla_id": "40",
-    "subscription_id": "6",
-    "severity_level": "P1",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.63,
-    "created_at": "2025-01-20T16:13:39"
+    "subscription_id": "20",
+    "severity_level": "P2",
+    "response_time_minutes": 60,
+    "resolution_time_hours": 72,
+    "availability_percentage": 98.3,
+    "created_at": "2025-09-03T10:21:34"
   },
   "41": {
     "sla_id": "41",
-    "subscription_id": "35",
-    "severity_level": "P1",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 2,
-    "availability_percentage": 99.4,
-    "created_at": "2024-01-08T06:26:58"
+    "subscription_id": "20",
+    "severity_level": "P3",
+    "response_time_minutes": 120,
+    "resolution_time_hours": 48,
+    "availability_percentage": 98.3,
+    "created_at": "2025-03-05T13:09:28"
   },
   "42": {
     "sla_id": "42",
-    "subscription_id": "16",
-    "severity_level": "P4",
-    "response_time_minutes": 720,
-    "resolution_time_hours": 48,
-    "availability_percentage": 99.85,
-    "created_at": "2023-09-30T05:06:23"
+    "subscription_id": "21",
+    "severity_level": "P1",
+    "response_time_minutes": 30,
+    "resolution_time_hours": 24,
+    "availability_percentage": 99.8,
+    "created_at": "2025-05-27T18:25:50"
   },
   "43": {
     "sla_id": "43",
-    "subscription_id": "34",
-    "severity_level": "P2",
+    "subscription_id": "22",
+    "severity_level": "P1",
     "response_time_minutes": 15,
     "resolution_time_hours": 4,
-    "availability_percentage": 99.55,
-    "created_at": "2025-05-27T13:43:18"
+    "availability_percentage": 96.5,
+    "created_at": "2025-07-16T19:05:01"
   },
   "44": {
     "sla_id": "44",
-    "subscription_id": "4",
-    "severity_level": "P2",
+    "subscription_id": "23",
+    "severity_level": "P1",
     "response_time_minutes": 30,
-    "resolution_time_hours": 4,
-    "availability_percentage": 99.55,
-    "created_at": "2024-10-31T00:22:16"
+    "resolution_time_hours": 8,
+    "availability_percentage": 96.4,
+    "created_at": "2024-11-27T17:59:15"
   },
   "45": {
     "sla_id": "45",
-    "subscription_id": "12",
-    "severity_level": "P3",
-    "response_time_minutes": 120,
+    "subscription_id": "24",
+    "severity_level": "P1",
+    "response_time_minutes": 15,
     "resolution_time_hours": 24,
-    "availability_percentage": 99.84,
-    "created_at": "2025-06-27T23:45:37"
+    "availability_percentage": 98.7,
+    "created_at": "2025-09-23T06:11:25"
   },
   "46": {
     "sla_id": "46",
-    "subscription_id": "5",
-    "severity_level": "P3",
-    "response_time_minutes": 240,
-    "resolution_time_hours": 24,
-    "availability_percentage": 99.13,
-    "created_at": "2025-05-15T01:17:29"
-  },
-  "47": {
-    "sla_id": "47",
     "subscription_id": "25",
     "severity_level": "P1",
-    "response_time_minutes": 10,
-    "resolution_time_hours": 1,
-    "availability_percentage": 99.28,
-    "created_at": "2024-12-05T20:28:54"
-  },
-  "48": {
-    "sla_id": "48",
-    "subscription_id": "8",
-    "severity_level": "P2",
     "response_time_minutes": 30,
-    "resolution_time_hours": 12,
-    "availability_percentage": 99.28,
-    "created_at": "2023-10-23T19:14:48"
-  },
-  "49": {
-    "sla_id": "49",
-    "subscription_id": "27",
-    "severity_level": "P1",
-    "response_time_minutes": 5,
-    "resolution_time_hours": 1,
-    "availability_percentage": 99.28,
-    "created_at": "2023-09-30T20:44:12"
-  },
-  "50": {
-    "sla_id": "50",
-    "subscription_id": "35",
-    "severity_level": "P1",
-    "response_time_minutes": 15,
-    "resolution_time_hours": 2,
-    "availability_percentage": 99.16,
-    "created_at": "2025-08-30T18:50:42"
+    "resolution_time_hours": 24,
+    "availability_percentage": 97.6,
+    "created_at": "2025-09-24T20:33:55"
   }
 }

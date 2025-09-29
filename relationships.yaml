@@ -1,0 +1,282 @@
+foreign_keys:
+  - parent_table: clients
+    parent_column: client_id
+    child_table: users
+    child_column: client_id
+    type: "1:N"
+
+  - parent_table: vendors
+    parent_column: vendor_id
+    child_table: users
+    child_column: vendor_id
+    type: "1:N"
+
+  - parent_table: vendors
+    parent_column: vendor_id
+    child_table: products
+    child_column: support_vendor_id
+    type: "1:N"
+
+  - parent_table: products
+    parent_column: product_id
+    child_table: infrastructure_components
+    child_column: product_id
+    type: "1:N"
+
+  - parent_table: clients
+    parent_column: client_id
+    child_table: subscriptions
+    child_column: client_id
+    type: "1:N"
+
+  - parent_table: products
+    parent_column: product_id
+    child_table: subscriptions
+    child_column: product_id
+    type: "1:N"
+
+  - parent_table: subscriptions
+    parent_column: subscription_id
+    child_table: service_level_agreements
+    child_column: subscription_id
+    type: "1:N"
+
+  - parent_table: clients
+    parent_column: client_id
+    child_table: incidents
+    child_column: client_id
+    type: "1:N"
+
+  - parent_table: infrastructure_components
+    parent_column: component_id
+    child_table: incidents
+    child_column: component_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: incidents
+    child_column: reporter_user_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: incidents
+    child_column: assigned_to_user_id
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: incident_escalations
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: incident_escalations
+    child_column: escalated_by_user
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: incident_escalations
+    child_column: escalated_to_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: communications
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: communications
+    child_column: sender_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: communications
+    child_column: recipient_id
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: workarounds
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: workarounds
+    child_column: implemented_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: root_cause_analysis
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: root_cause_analysis
+    child_column: conducted_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: change_requests
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: change_requests
+    child_column: requesting_user
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: change_requests
+    child_column: approved_by_user
+    type: "1:N"
+
+  - parent_table: change_requests
+    parent_column: change_id
+    child_table: rollback_requests
+    child_column: change_id
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: rollback_requests
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: rollback_requests
+    child_column: requesting_user
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: rollback_requests
+    child_column: approved_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: performance_metrics
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: performance_metrics
+    child_column: recorded_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: incident_reports
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: incident_reports
+    child_column: generated_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: knowledge_base_articles
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: knowledge_base_articles
+    child_column: created_by_user
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: knowledge_base_articles
+    child_column: reviewer_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: post_incident_reviews
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: post_incident_reviews
+    child_column: facilitator_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: incident_updates
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: incident_updates
+    child_column: updated_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: problem_tickets
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: problem_tickets
+    child_column: issued_by_user
+    type: "1:N"
+
+  - parent_table: incidents
+    parent_column: incident_id
+    child_table: work_orders
+    child_column: incident_id
+    type: "1:N"
+
+  - parent_table: change_requests
+    parent_column: change_id
+    child_table: work_orders
+    child_column: change_id
+    type: "1:N"
+
+  - parent_table: problem_tickets
+    parent_column: problem_id
+    child_table: work_orders
+    child_column: problem_id
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: work_orders
+    child_column: assigned_to_user
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: work_orders
+    child_column: created_by_user
+    type: "1:N"
+
+  - parent_table: users
+    parent_column: user_id
+    child_table: audit_logs
+    child_column: audit_by_user
+    type: "1:N"

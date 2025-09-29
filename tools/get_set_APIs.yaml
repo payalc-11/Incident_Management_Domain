@@ -1,0 +1,105 @@
+interface_1:
+  set:
+    - create_client
+    - create_client_subscription
+    - create_sla_record
+    - generate_incident_report
+    - log_audit
+    - log_metric
+    - manage_sla_record
+    - record_kb_article
+    - register_user
+    - report_incident
+    - update_client
+    - update_user
+  get:
+    - discover_client
+    - discover_subscription
+    - discover_user
+
+interface_2:
+  set:
+    - add_component
+    - add_product
+    - conduct_rca
+    - add_client_subscription
+    - create_vendor
+    - create_audit
+    - log_incident_update
+    - record_communication
+    - record_workaround
+    - file_incident
+    - submit_escalation
+    - update_incident
+  get:
+    - discover_component
+    - discover_incident
+    - discover_product
+    - discover_vendor
+
+interface_3:
+  set:
+    - add_communication
+    - add_incident_update
+    - add_workaround
+    - amend_incident
+    - amend_user
+    - create_escalation
+    - create_ticket
+    - create_workorder
+    - record_rca
+    - transfer_to_human
+    - update_ticket
+    - update_workorder
+    - write_audit
+  get:
+    - get_incident
+    - get_user
+
+interface_4:
+  set:
+    - add_audit
+    - add_incident_report
+    - add_incident
+    - add_kb_article
+    - add_metric
+    - add_ticket
+    - add_workorder
+    - create_rca
+    - create_rollback_request
+    - edit_client
+    - edit_ticket
+    - edit_workorder
+    - log_sla_record
+    - submit_change_request
+    - submit_post_incident_review
+  get:
+    - list_client
+    - list_component
+    - list_subscription
+
+interface_5:
+  set:
+    - create_component
+    - create_product
+    - create_user
+    - escalate_to_human
+    - make_sla_record
+    - record_audit
+    - register_change_request
+    - register_client
+    - register_communication
+    - register_escalation
+    - register_incident_report
+    - register_kb_article
+    - register_post_incident_review
+    - register_vendor
+    - register_workorder
+    - submit_rollback_request
+  get:
+    - fetch_client
+    - fetch_component
+    - fetch_product
+    - fetch_subscription
+    - fetch_user
+    - fetch_vendor

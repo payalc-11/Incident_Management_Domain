@@ -1,219 +1,158 @@
-# Incident Management Policy
-Current Date: September 26, 2025
+# Incident Management Policy (Client, User & Vendor Management)
+The current time is 2025-09-25 12:00:00 UTC
 
-## Introduction
-This document defines the operational guide for an incident management automation agent.  
-It is designed for single-turn execution: each procedure must be self-contained and completed in one interaction.
+## Common Standards (applies to all SOPs)
+- Validation: Halt with a clear error if required inputs are missing or invalid.  
+- Authorization & Approvals: Enforce role-based access. Approvers can act without self-signoff unless SOP mandates another role.  
+- Logging & Audit: Log every create/update/approve/reject/delete/execute.  
+- Halt Conditions: Stop with clear messaging (and escalate if needed) when inputs, approvals, or external calls fail.  
+- Data Minimization: Store only necessary audit context; avoid raw PII or full datasets.  
+- Tool Usage: Use only provided tools—no invented steps or integrations.  
 
-## SOPs
-These Standard Operating Procedures provide structured workflows for managing incidents.  
-Each procedure defines clear steps, role-based permissions, and validation requirements to ensure consistent incident handling and resolution.
+## Roles and Responsibilities
 
----
-## Incident Operations
+#### System Administrator
 
-### Creating Incidents
-Use when service impacts are detected requiring formal incident management response.  
-Who Can Perform: Incident managers, technical support, system administrators, vendor contacts, executive  
-Pre-checks:
-- Check that reporter user exists and has active status
-- Verify client exists
-- Check that component exists if specified
+- Manage clients, users, vendors, and products; configure system settings; maintain infrastructure components; manage permissions and subscriptions.
 
-Steps:
-- Request incident title, description, category, severity, and impact level
-- Check for existing open incidents with similar characteristics
-- Apply severity classification process
-- Set detection timestamp and initial status as open
-- Associate with specified client and infrastructure component records
-- Create incident record with determined severity level and return incident identifier
+#### Incident Manager
 
+- Oversee incidents through lifecycle; coordinate escalations and communications; approve SLAs and subscriptions; facilitate post-incident reviews and root cause analysis.
 
-#### Severity Classification Process during Incident Creation:  
-Evaluate the following conditions and set the corresponding boolean flags (`p1_*`, `p2_*`, `p3_*`) to **True** for every condition that applies based on the available data. Compute severity as **P1** if any P1 condition is `True`; otherwise **P2** if any P2 condition is `True`; otherwise **P3** if any P3 condition is `True`; otherwise **P4**.
+#### Technical Support
 
-**P1 Evaluation:**
-- Evaluate whether the incident causes complete outage of business-critical service with no workaround available.
-- Evaluate whether the incident impacts the entire enterprise or multiple customers with 5 or more affected parties.
-- Evaluate whether the incident has significant regulatory, safety, or financial implications.
-- Evaluate whether the incident involves a high-priority customer with contractual P1 requirements or is a recurrent incident.
+- Handle incident investigations; implement workarounds; conduct root cause analysis; maintain knowledge base; manage infrastructure components and technical changes.
 
-**P2 Evaluation:**
-- Evaluate whether the incident causes major degradation of business-critical services with a workaround available.
-- Evaluate whether the incident impacts multiple departments, sites, or critical business functions.
-- Evaluate whether the incident risks breaching a high-priority SLA with significant impact.
+#### Account Manager
 
-**P3 Evaluation:**
-- Evaluate whether the incident impacts a single department, localized users, or a non-critical function.
-- Evaluate whether the incident causes moderate degradation with operations continuing using a minimal workaround.
+- Maintain client records and subscriptions; define service levels; manage client relationships; coordinate incident communications.
 
-If none of the P1/P2/P3 conditions apply, set severity as **P4**.
+#### Executive
 
-- Set detection timestamp and initial status as open  
-- Associate with specified client and reporter.  
-- Create incident record with determined severity level and return incident identifier
+- Approve high-level policies and escalations; manage critical subscriptions and vendor agreements; authorize major changes and resources.
 
-### Updating Incident Status
-Use when incident conditions change requiring status modifications or progress updates.  
-Who Can Perform: Incident managers, technical support, executive  
-Pre-checks:
-- Verify incident exists and is accessible to user
-- Check user's role allows incident modifications
-- Confirm new status exists in allowed status enumeration
+#### Vendor Contact
+
+- Report and update on incidents; coordinate with internal teams for vendor-related issues.
+
+#### Client Contact
+
+- Report incidents affecting their organization; receive updates and manage internal communications during incidents.  
+
+## Standard Operating Procedures (SOPs)
+
+### Client Management
+
+**Authorized user role:** System Administrator, Account Manager (assigned to the client for update operation)
+
+**1\. Client Onboarding**
+
+Onboard a new client (enterprise, mid-market, small business, or startup) in the incident management system to enable incident tracking and service subscriptions.
+
+Inputs:
+
+- Required: client_name, registration_number (unique), contact_email (unique), client_type
+- Optional: country, industry, status (default: 'active')
 
 Steps:
-- Retrieve current incident record
-- Request specific status changes or field updates needed
-- Check that new status value matches allowed enum values
-- Apply changes to incident with current timestamp and user identifier
-- Create incident update record documenting the change
-- Return updated incident information
 
-#### subscription tier values and metrics
-**Premium Tier**
+- Verify that registration_number and contact_email are unique.
+- Collect all required client information from the user.
+- Create the client record using create_client.
+- Default status = active unless specified by user; return client_id.
+- Create an audit entry for client creation using log_audit.
 
-Target clients: Enterprise customers with mission-critical operations
-Response times by severity:
-- P1 (Critical): 15-30 minutes initial response
-- P2 (High): 1-2 hours initial response
-- P3 (Medium): 4-8 hours initial response
-- P4 (Low): 24-48 hours initial response
+Halt conditions: Missing or invalid inputs; duplicate registration number or email; unauthorized user; creation failed
 
-Resolution times:
-- P1: 2-4 hours resolution target
-- P2: 8-24 hours resolution target
-- P3: 48-72 hours resolution target
-- P4: 128 hours resolution target
-Availability guarantee: 99.9% uptime
-Support coverage: 24/7/365
+**2\. Client Information Update**
 
-**Standard Tier**
+Modify existing client details or update the client's status to keep records accurate and aligned with current business needs.
 
-Target clients: Mid-market businesses with important but less critical operations
-Response times by severity:
-- P1: 1-2 hours initial response
-- P2: 4-8 hours initial response
-- P3: 24 hours initial response
-- P4: 48-72 hours initial response
+Inputs:
 
-Resolution times:
-- P1: 8-24 hours resolution target
-- P2: 24-48 hours resolution target
-- P3: 72-120 hours resolution target
-- P4: 168 hours resolution target
-Availability guarantee: 99.5% uptime
-Support coverage: Business hours with on-call for critical issues
-
-**Basic Tier**
-
-Target clients: Small businesses and startups with standard operational needs
-Response times by severity:
-- P1: 4-8 hours initial response
-- P2: 24 hours initial response
-- P3: 48-72 hours initial response
-- P4: 5-7 business days initial response
-
-Resolution times:
-- P1: 24-48 hours resolution target
-- P2: 72-120 hours resolution target
-- P3: 5-10 business days resolution target
-- P4: 2 weeks
-
-Availability guarantee: 99.0% uptime
-Support coverage: Business hours only
-
-**SLA Breach Detection and Logging:**
-When marking an incident as resolved, the system should automatically check if the total resolution time exceeded the SLA targets defined for the customer's subscription tier and incident severity level. If the actual resolution time was longer than the guaranteed resolution target, this constitutes an SLA breach that must be recorded and logged for tracking and reporting purposes.
-
-## Client Management Operations
-
-### Creating Client Records
-Use when registering new enterprise, mid-market, small business, or startup clients requiring incident management services.  
-Who Can Perform: Account managers, system administrators  
-Pre-checks:
-- Verify client registration number is unique by checking existing client records
-- Check that contact email is not already used by another client
-- Confirm all required fields are provided
+- Obtain client_id
+- change_set (such as status modification or other client details)
 
 Steps:
-- Obtain complete client information including name, registration number, contact details, and client type
-- Verify registration number and email are not already present in database
-- Set initial status as active unless specified otherwise
-- Create client record and return client identifier
-- Confirm successful creation
 
-### Updating Client Information
-Use when client details change or status modifications are required.
-Who Can Perform: Account managers assigned to the client and system administrators
-Pre-checks:
-- Verify client record exists
-- Check user has permission to modify this client's information based on their role and client association
-- Confirm new registration number or email is unique if being changed
+- Check uniqueness for registration_number and contact_email if being updated.
+- Retrieve current client record.
+- Update the requested changes using update_client with the current timestamp.
+- Create an audit entry for the update using log_audit.
 
-Steps:
-- Retrieve current client record
-- Request specific fields requiring updates
-- Check uniqueness constraints for any identifying fields being changed
-- Apply changes with current timestamp and user identification
-- Confirm changes saved successfully
+Halt conditions: Client not found; duplicate registration_number or contact_email; unauthorized user; update failed
 
-## User Management Operations
+### User Management
 
-### Creating User Accounts
-Use when adding personnel to the incident management system.  
-Who Can Perform: System administrators and incident managers  
-Pre-checks:
-- Check that email address is unique
-- Verify all required fields are provided
-- Confirm client or vendor exists if association is specified
+**Authorized user roles:** System Administrator, Incident Manager
+
+**1\. Register User Account**
+
+Add personnel to the incident management system with proper role, client/vendor association, and active status.
+
+Inputs:
+
+- Required: name, email (unique), role
+- Optional: department, client_id, vendor_id, timezone (default: 'UTC'), status (default: 'active')
 
 Steps:
-- Acquire complete user information including name, email, role, and department
-- Check for existing records with same email address
-- Associate user with specified client or vendor if provided
-- Set status as active and record timezone information
-- Create user record with current timestamp and return user identifier
 
+- Check that the email address is unique.
+- Confirm that specified client_id or vendor_id exists if association is provided.
+- Create the user record with active status using register_user.
+- Create an audit entry for the user creation using log_audit.
 
-### Managing User Permissions
-Use when modifying user access levels or role assignments.  
-Who Can Perform: System administrators and incident managers  
-Pre-checks:
-- Verify user record exists
-- Check requesting user has authority based on role (system administrators, incident managers - only)
-- Confirm new role value exists in allowed enumeration
+Halt conditions: Missing required fields; duplicate email; specified client/vendor does not exist;
 
-Steps:
-- Retrieve current user record
-- Request specific role or status changes needed
-- Check that new role assignment is valid
-- Apply updates with modifier identification
-- Return updated user record and confirm changes saved
+creation failed
 
+**2\. Update User Details**
 
-## Vendor Management Operations
+Modify existing user role assignments, or status while ensuring authorization.
 
-### Registering Vendor Information
-Use when adding external service providers to the incident management ecosystem.  
-Who Can Perform: System administrators, incident managers, and executives  
-Pre-checks:
-- Check that vendor name, contact email and contact phone is unique
-- Verify all required fields are provided
-- Confirm vendor type exists in allowed enumeration values
+Inputs:
+
+- Obtain user_id
+- change_set (such as status modification or role assignments)
 
 Steps:
-- Acquire vendor details including name, type, and contact information
-- Check for existing records with same vendor name
-- Set status as active unless specified otherwise
-- Create vendor record with current timestamp
-- Return vendor identifier and confirm successful creation
 
+- Verify that the user record exists.
+- Validate that the new role assignment exists in the allowed enumeration.
+- Update the requested changes using update_user with the current timestamp.
+- Create an audit entry for the update using log_audit.
+
+Halt conditions: User record not found; unauthorized request; invalid role assignment; update failed
+
+### Vendor Management
+
+**Authorized user role:** System administrators, incident managers, and executives.
+
+**Register Vendor Information**
+
+Add external service providers to the incident management system, ensuring uniqueness and proper classification.
+
+Inputs:
+
+- Required: vendor_name (unique), vendor_email (unique), vendor_phone (unique), vendor_type
+- Optional: status (default: 'active')
+
+Steps:
+
+- Check that vendor_name, contact_email, and contact_phone are unique.
+- Confirm that vendor_type exists in the allowed enumeration.
+- Create (create_vendor) the vendor record with active status unless otherwise specified.
+- Create an audit entry for vendor registration using log_audit.
+
+Halt conditions: Missing required fields; duplicate vendor name, email, or phone; invalid vendor_type; creation failed
 
 ## Authority and Access Controls
 
-### Permission Validation
-All operations verify user authority based on:
-- Role field (incident_manager, technical_support, account_manager, executive, vendor_contact, system_administrator, client_contact)
-- Client association through client_id field
-- Vendor association through vendor_id field
-- Active status in user table
+**Permission Validation**
+
+All operations enforce user authority based on:
+
+- Role: incident_manager, technical_support, account_manager, executive, vendor_contact, system_administrator, client_contact
+- Client association: user must be linked to the relevant client_id
+- Vendor association: user must be linked to the relevant vendor_id
+- Active status: user must be active in the users table
